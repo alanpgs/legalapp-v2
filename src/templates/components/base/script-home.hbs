@@ -1,0 +1,82 @@
+
+<script src="{{assets}}/scripts/lib/modernizr.min.js"></script>
+<script src="{{assets}}/scripts/lib/jquery-3.6.0.min.js"></script>
+<script src="{{assets}}/scripts/lib/jquery-migrate-3.3.2.min.js"></script>
+<script src="{{assets}}/scripts/min/home_plugins.js"></script>
+<script src="{{assets}}/scripts/min/home.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', ()=> {
+
+        $.fancybox.open({
+          src: '#introPopup'
+        })  
+        
+         var bannerSwiper = new Swiper(".banner_wrapper .swiper-container", {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            autoplay: {
+                delay: 7500,
+            },
+            pagination: {
+                el: ".banner_wrapper .swiper-pagination",
+                clickable: true
+            },
+        });
+
+        var legislationSwiper = new Swiper(".legislation_wrapper .swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".legislation_wrapper .swiper-pagination",
+                clickable: true
+            },
+            autoplay: {
+                delay: 7500,
+            },
+             breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 35,
+                },
+            },
+        });
+
+        var mostWatchedSwiper = new Swiper(".most_watched_wrapper .swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".most_watched_wrapper .swiper-pagination",
+                clickable: true
+            },
+            autoplay: {
+                delay: 7500,
+            },
+             breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 35,
+                },
+            },
+        });
+        
+    })
+</script>

@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #A18561;
+  --secondary-color: #344B61;
+  --third-color: #33353a;
+  --border-color: #f1f1f1;
+  --text-color: #344B61;
+  --white-color: #fff;
+  --black-color: rgb(0, 0, 0);
+  --red-color: rgb(235, 48, 48);
+  --nav-color: rgb(33, 35, 41);
+  --btn-color: rgb(255, 255, 255);
+  --bg-color: rgb(255, 255, 255);
+  --grey-color: #F6F6F6;
+  --font-family: 'DIN Next LT Arabic', sans-serif;
+  --font-size: 1rem;
+  --ease: cubic-bezier(0.23, 0.48, 0.26, 0.94);
+}
+
+html[theme=dark]{
+  --text-color: rgb(255, 255, 255);
+  --btn-color: rgb(33, 35, 41);
+  --white-color: #fff;
+  --bg-color: rgb(33, 35, 41);
+  --border-color: #494c54;
+}

@@ -1,0 +1,68 @@
+ {{> loader}}
+{{> header}}
+
+<main class="page_">
+
+    <div class="breadcrumb_wrapper">
+        <div class="container">
+            <ul class="breadcrumb_">
+                <li><a href="{{menuLink 'index'}}">الصفحة الرئيسية</a></li>
+                <li><span>تسجيل الدخول</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section_">
+        <div class="container">
+
+            <div class="login_wrapper">
+                <div class="login_form">
+                    <form action="{{menuLink 'dashboard'}}" class="form_">
+
+                        <div class="input_">
+                            <div class="section_title">
+                                <h2><span>الدخول</span></h2>
+                            </div>
+                        </div>
+
+                        <div class="input_ full_">
+                            <label for="name">البريد الإلكتروني</label>
+                            <input type="text" name="name" autocomplete="off" >
+                        </div> 
+
+                        <div class="input_ full_">
+                            <label for="password">كلمه السر</label>
+                            <input type="password" name="password" autocomplete="off">
+                        </div>
+
+                        <div class="input_">
+                            <a href="{{menuLink 'register'}}" class="linK_">ليس لديك حساب؟ <span>سجل </span> هنا</a>
+                        </div>
+
+                        <div class="input_ text_end">
+                            <a href="{{menuLink 'forgotpassword'}}" class="linK_">نسيت كلمة المرور؟</a>
+                        </div>
+
+
+                        <div class="btn_group full_ ">
+                            <button type="submit" class="btn_">
+                                <span>المزيد</span>
+                                <i class="icon-arrow-left"></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+{{> footer}} 
+{{> script-page}}
+
+<script>
+
+</script>

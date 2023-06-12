@@ -1,0 +1,66 @@
+<header id="header">
+  <div class="container">
+    <div class="nav_wrapper">
+
+      <div class="nav_content">
+
+        <nav class="navbar_">
+          <ul>
+            <li class="nav_item"><button class="toggler_" data-toggler><span></span></button></li>
+            <li class="nav_item_icon"><a href="{{menuLink 'index'}}"><i class="icon-home"></i></a></li>
+            <li class="nav_item_icon"><a href="{{menuLink 'login'}}"><i class="icon-user"></i></a></li>
+            <li class="nav_item_icon"><a href="#"><i class="icon-phone"></i></a></li>
+            <li class="nav_item"><a href="#">دستور الدولة</a></li>
+            <li class="nav_item"><a href="#">التشريعات</a></li>
+            <li class="nav_item"><a href="{{page_ar}}">EN</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav_search">
+          <form action="{{menuLink 'search'}}">
+            <input type="text" placeholder="بحث">
+            <button type="submit"><i class="icon-search"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="nav_logo">
+        <a href="{{menuLink 'index'}}" class="nav_link">
+          <img src="{{assets}}/images/logo.svg" alt="UAE">
+        </a>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="nav_mega_menu">
+
+    <div class="bg_"><img src="{{assets}}/images/bg-menu.png" alt="UAE" loading="lazy"></div>
+
+    <div class="container">
+      <div class="menu_container">
+
+        <div class="nav_search">
+          <form action="#">
+            <input type="text" placeholder="بحث">
+            <button type="submit"><i class="icon-search"></i></button>
+          </form>
+        </div>
+
+        <nav class="mega_navbar">
+          <ul>
+            <li class="nav_item"><a href="{{menuLink 'index'}}"> الرئيسية</a></li>
+            <li class="nav_item"><a href="{{menuLink 'news'}}">الأخبار</a></li>
+            <li class="nav_item"><a href="{{menuLink 'about'}}">معلومات عنا</a></li>
+            <li class="nav_item"><a href="{{menuLink 'faq'}}">أسئلة متكررة</a></li>
+            <li class="nav_item"><a href="{{menuLink 'constitution'}}">الدستور</a></li>
+            <li class="nav_item"><a href="{{menuLink 'contact'}}">تواصل معنا</a></li>
+            <li class="nav_item"><a href="{{menuLink 'laws'}}">التشريعات</a></li>
+            <li class="nav_item"><a href="{{menuLink 'login'}}">تسجيل الدخول</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

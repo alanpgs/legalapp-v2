@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: var(--bg-color);
+}
+
+html, body {
+    font-size: 17px;
+
+    @media only screen and (max-width: 1680px){
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 1380px){
+        font-size: 14px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family:  var(--font-family-head);
+    font-weight: bold;
+}
+
+
+a {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+        color: var(--text-color);
+    }
+
+    &:hover {
+        outline: none;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+ol,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 91.5%;
+    min-width: 91.5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16px;
+
+    @media screen and (min-width:1920px) {
+        width: 100%;
+        max-width: 1740px;
+        min-width: 1740px;
+    }
+
+    @media screen and (min-width: 767px) and (max-width:1200px) {
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+    @media only screen and (max-width: 767px){
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+}
+
+

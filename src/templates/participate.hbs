@@ -1,0 +1,115 @@
+{{> loader}}
+{{> header}}
+
+<main class="page_">
+
+    <div class="breadcrumb_wrapper">
+        <div class="container">
+            <ul class="breadcrumb_">
+                <li><a href="{{menuLink 'index'}}">الصفحة الرئيسية</a></li>
+                <li><span>يشارك</span></li>
+            </ul>   
+        </div>
+    </div>
+
+    <section class="section_">
+        <div class="container">
+
+           
+
+            <form action="#" class="form_ animated_wrapper d_2">
+
+                <div class="input_ full_">
+                    <div class="title_wrapper have_margin between_">
+                        <div class="section_title">
+                            <h2><span>يشارك</span></h2>
+                        </div>
+
+                        <ul class="icon_link_list">
+                            <li><a href="{{menuLink 'index'}}"><i class="icon-back"></i></a></li>
+                        </ul>
+                    </div>
+                </div>  
+
+                <div class="input_ full_">
+                    <label for="description">Description</label>
+                    <textarea name="nescription"></textarea>
+                </div>
+                
+                <div class="input_ full_">
+                    <div class="text_area">
+                        <h4>القانون ذو الصلة</h4>
+                        <p>قانون اتحادي رقم (51) لسنة 2006 في شأن مكافحة جرائم الاتجار بالبشر</p>
+                    </div>
+                </div>
+
+                <div class="input_ full_ attachment_">
+                    <input type="file" class="form-control uploader" data-type="attachment" data-mimes="pdf,jpeg,png,jpg"  id="attachment" name="attachment" data-parsley-group="step2" data-parsley-required-message="" />
+                    <div class="choose">
+                        <div class="choose-btn">مرفق</div>
+                        <div class="choose-file uploadFileName"></div>
+                        <div class="uploadPercentage"></div>
+
+                        <div class="uploadProgressWrapper">
+                        <div class="uploadProgress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_ full_">
+
+                    <div class="laws_table_wrapper">
+
+                        <div class="laws_table style_1">
+
+                            <div class="l_t_head">
+                                <div class="head_tr">
+                                    <span>Attachment Name</span>
+                                    <span>Action</span>
+                                </div>
+                            </div>
+
+                            <div class="l_t_body">
+
+                                <div class="body_tr">
+                                    <div class="body_td">
+                                        <span>اسم المرفق يأتي هنا</span>
+                                        <ul class="icon_link_list">
+                                            <li><a href="#"><i class="icon-trash"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="body_tr">
+                                    <div class="body_td">
+                                        <span>اسم المرفق يأتي هنا</span>
+                                        <ul class="icon_link_list">
+                                            <li><a href="#"><i class="icon-trash"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="btn_group full_ ">
+                    <button type="submit" class="btn_">
+                        <span>المزيد</span>
+                        <i class="icon-arrow-left"></i>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+{{> footer}} 
+{{> script-page}}

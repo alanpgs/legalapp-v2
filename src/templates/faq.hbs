@@ -1,0 +1,70 @@
+{{> loader}}
+{{> header}}
+
+<main class="page_">
+
+    <div class="breadcrumb_wrapper">
+        <div class="container">
+            <ul class="breadcrumb_">
+                <li><a href="{{menuLink 'index'}}">الصفحة الرئيسية</a></li>
+                <li><span>أسئلة متكررة</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section_">
+        <div class="container">
+
+            <div class="title_wrapper have_margin between_">
+                <div class="section_title">
+                    <h2><span>أسئلة متكررة</span></h2>
+                </div>
+
+                <ul class="icon_link_list">
+                    <li><a href="{{menuLink 'index'}}"><i class="icon-back"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="faq_wrapper animated_wrapper d_2 sm_">
+                <div class="item_">
+                    <div class="head_">
+                        <div class="no_">01</div>
+                        <p>هل يستطيع المستخدم الاطلاع على النصوص السابقة للمواد قبل التعديل؟</p>
+                        <button><span></span></button>
+                    </div>
+                    <div class="body_"><p>نعم، يمكن للمستخدم الاطلاع على النصوص السابقة للمواد من خلال الضغط على رابط "عرض المواد السابقة</p></div>
+                </div>
+
+                <div class="item_">
+                    <div class="head_">
+                        <div class="no_">02</div>
+                        <p>هل يستطيع الممستخدم الاطلاع على التشريعات كما صدرت أول مرة؟</p>
+                        <button><span></span></button>
+                    </div>
+                    <div class="body_"><p>نعم، يمكن للمستخدم الاطلاع على النصوص السابقة للمواد من خلال الضغط على رابط "عرض المواد السابقة</p></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+{{> footer}} 
+{{> script-page}}
+
+<script>
+    const faqFunction = ()=> {
+        const t = document.querySelectorAll('.faq_wrapper .item_');
+
+        t.forEach((el)=> {
+            const b = el.querySelector('.head_');
+
+            b.addEventListener('click', (e)=> {
+                el.classList.toggle('active_')
+            })
+        })
+    }
+
+    faqFunction();
+</script>

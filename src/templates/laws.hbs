@@ -1,0 +1,424 @@
+{{> loader}}
+{{> header}}
+<main class="page_">
+    <div class="breadcrumb_wrapper">
+        <div class="container">
+            <ul class="breadcrumb_">
+                <li><a href="{{menuLink 'index'}}">الصفحة الرئيسية</a></li>
+                <li><span>التشريعات</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section_">
+        <div class="container">
+            <div class="title_wrapper have_margin between_">
+                <div class="section_title">
+                    <h2><span>التشريعات</span></h2>
+                </div>
+
+                <ul class="icon_link_list">
+                    <li><a href="{{menuLink 'index'}}"><i class="icon-back"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="laws_wrapper t_animation d3">
+
+                <div class="placeholder_">
+                    <div class="laws_date_filter">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2023" checked>
+                                    <div class="i_area">
+                                        <div class="no_"><span>2023</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2022">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2022</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2021">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2021</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2020">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2020</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2019">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2019</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2018">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2018</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2017">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2017</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2016">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2016</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2015">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2015</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2014">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2014</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="year" value="2013">
+                                    <div class="i_area">
+                                        <div class="no_"><span>2013</span></div>
+                                        <div class="line_"><span></span></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laws_filter ">
+                    <div class="c_checkbox">
+                        <input type="checkbox" id="name1">
+                        <span>
+                        </span>
+                        <label for="name1">قوانين</label>
+                    </div>
+
+                    <div class="c_checkbox">
+                        <input type="checkbox" id="name2">
+                        <span>
+                        </span>
+                        <label for="name2">مراسيم بقوانين   </label>
+                    </div>
+
+                    <div class="c_checkbox">
+                        <input type="checkbox" id="name3">
+                        <span>
+                        </span>
+                        <label for="name3">قرارات</label>
+                    </div>
+
+                    <div class="c_checkbox">
+                        <input type="checkbox" id="name4">
+                        <span>
+                        </span>
+                        <label for="name4">مراسيم إتحادية</label>
+                    </div>
+
+                    <div class="select_">
+                        <select id="select1">
+                            <option>Select 1</option>
+                            <option>Select 2</option>
+                            <option>Select 3</option>
+                            <option>Select 4</option>
+                        </select>
+                    </div>
+
+                    <div class="select_">
+                        <select id="select2">
+                            <option>Select 1</option>
+                            <option>Select 2</option>
+                            <option>Select 3</option>
+                            <option>Select 4</option>
+                        </select>
+                    </div>
+
+                    <div class="input_field with_icon">
+                        <input type="text" placeholder="كلمات البحث">
+                        <button><i class="icon-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="laws_table_wrapper">
+                    <div class="laws_table">
+
+                        <div class="l_t_head">
+                            <div class="head_tr">
+                                <span>التشريع</span>
+                                <span>رقم التشريع</span>
+                                <span>نوع التشريع</span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="l_t_body">
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون مكافحة جرائم الاتجار بالبشر</a>
+                                    <span>51</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <span>05</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr success_">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <span>27</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#" class="active_"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                    <div class="tag_ tooltip" title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون ضمان الحقوق في الأموال المنقولة</a>
+                                    <span>54</span>
+                                    <span>مرسوم بقانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="body_tr success_">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون تنظيم علاقات العمل</a>
+                                    <span>76</span>
+                                    <span>مرسوم بقانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                    <div class="tag_ tooltip" title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون الإثبات في المعاملات المدنية والتجارية</a>
+                                    <span>23</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون مكافحة الغش التجاري</a>
+                                    <span>22</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون تنظيم وحماية حقوق الملكية الصناعية</a>
+                                    <span>17</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <span>30</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="body_tr">
+                                <div class="body_td">
+                                    <a href="{{menuLink 'residents-laws'}}">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <span>30</span>
+                                    <span>قانون اتحادي</span>
+                                    <ul class="icon_link_list">
+                                        <li><a href="#"><i class="icon-save"></i></a></li>
+                                        <li><a href="#"><i class="icon-share"></i></a></li>
+                                        <li><a href="#"><i class="icon-download"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="table_pagination">
+                        <ul>
+                            <li><a href="#" class="arrow_ prev_"><i class="icon-chevron-right"></i></a></li>
+                            <li><a href="#" class="l_ active_">1</a></li>
+                            <li><a href="#" class="l_">2</a></li>
+                            <li><a href="#" class="l_">3</a></li>
+                            <li><a href="#" class="l_">4</a></li>
+                            <li><a href="#" class="arrow_ next_"><i class="icon-chevron-left"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{{> footer}} 
+{{> script-page}}
+
+<script>
+    const filterSize = ()=> {
+        var x = document.querySelector('.laws_filter').offsetHeight;
+        document.body.style.setProperty('--filter-height', x + "px");
+    }
+
+    var swiperCount = document.querySelectorAll('.placeholder_ .swiper-slide').length;
+
+    var swiperLength =  swiperCount > 12 ? 12 : swiperCount;
+
+    var swiperDir = window.innerWidth < 1200 ? 'horizontal' : 'vertical';
+
+    const getyearValue = (target, callback)=> {
+        var t = document.querySelectorAll('.placeholder_ input[type=radio]');
+
+        t.forEach((el, indx)=> {
+            el.addEventListener('click', ()=> {
+                callback(el.value, indx)
+            })
+        });
+    }
+    
+    window.addEventListener('DOMContentLoaded', ()=> {
+         
+         $('.tooltip').tooltipster();
+
+         const select1 = new SlimSelect({
+            select: '#select1'
+        })
+
+        const select2 = new SlimSelect({
+            select: '#select2'
+        })
+
+        filterSize();
+
+
+        var dateSwiper = new Swiper(".placeholder_ .swiper-container", {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            direction: swiperDir,
+            scrollbar: {
+                el: '.placeholder_ .swiper-scrollbar',
+                draggable: true,
+                hide: true,
+            },
+            mousewheel: {
+                invert: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 8,
+                    spaceBetween: 0,
+                },
+                1200: {
+                    slidesPerView: 10,
+                    spaceBetween: 0,
+                },
+            },
+        });
+
+        getyearValue('.placeholder_ input[type=radio]', (value, index)=> {
+            console.log(+value);
+            dateSwiper.slideTo(index);
+        })
+
+        
+    })
+
+    window.addEventListener('resize', ()=> {
+        filterSize();
+    })
+   
+</script>

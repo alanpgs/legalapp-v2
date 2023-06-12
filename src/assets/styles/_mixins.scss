@@ -1,0 +1,29 @@
+@mixin animate() {
+    transform: none;
+    opacity: 1;
+  }
+  
+  @mixin roundBorder() {
+    border-radius: 1.5vw;
+  
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      border-radius: 1.5vw;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      border-radius: 3.5vw;
+    }
+  }
+  
+  @mixin havePadding() {
+    padding: 1.5vw;
+  
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      padding: 2.5vw;
+    }
+  
+    @media only screen and (max-width: 767px) {
+      padding: 5vw;
+    }
+  }
+   
