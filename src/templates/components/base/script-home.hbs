@@ -1,4 +1,3 @@
-
 <script src="{{assets}}/scripts/lib/modernizr.min.js"></script>
 <script src="{{assets}}/scripts/lib/jquery-3.6.0.min.js"></script>
 <script src="{{assets}}/scripts/lib/jquery-migrate-3.3.2.min.js"></script>
@@ -6,20 +5,58 @@
 <script src="{{assets}}/scripts/min/home.js"></script>
 
 <script>
-    window.addEventListener('DOMContentLoaded', ()=> {
+    window.addEventListener('DOMContentLoaded', () => {
 
-        $.fancybox.open({
-          src: '#introPopup'
-        })  
-        
-         var bannerSwiper = new Swiper(".banner_wrapper .swiper-container", {
+        /* $.fancybox.open({
+             src: '#introPopup',
+             modal: true,
+             afterLoad: function (instance, slide) {
+ 
+                 // if ($(window).width() >= 768) {
+                 //     $('.intro_popup  .image_box').stickit({
+                 //         scope: document.querySelector('.fancybox-slide--html')
+                 //     });
+                 // }
+             }
+         })*/
+
+        var bannerSwiper = new Swiper(".banner_wrapper .banner_content .swiper-container", {
             effect: 'fade',
             fadeEffect: {
                 crossFade: true
             },
-            autoplay: {
-                delay: 7500,
+            /* autoplay: {
+                 delay: 7500,
+             },*/
+            pagination: {
+                el: ".banner_wrapper .swiper-pagination",
+                clickable: true
             },
+        });
+
+        var bannerImage = new Swiper(".banner_wrapper .banner_image .swiper-container", {
+            effect: "creative",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+
+            creativeEffect: {
+                perspective: true,
+                prev: {
+                    shadow: false,
+                    translate: ["28%", "-20%", 10],
+                    scale: .32
+                },
+                next: {
+                    shadow: false,
+                    translate: ["-32%", "20%", 10],
+                    scale: .32
+                },
+            },
+            /* autoplay: {
+                 delay: 7500,
+             },*/
             pagination: {
                 el: ".banner_wrapper .swiper-pagination",
                 clickable: true
@@ -36,7 +73,7 @@
             autoplay: {
                 delay: 7500,
             },
-             breakpoints: {
+            breakpoints: {
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 20,
@@ -62,7 +99,7 @@
             autoplay: {
                 delay: 7500,
             },
-             breakpoints: {
+            breakpoints: {
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 20,
@@ -76,7 +113,18 @@
                     spaceBetween: 35,
                 },
             },
+            on: {
+                init: function () {
+                    setTimeout(function () {
+                        if ($('.most_watched_wrapper .swiper-pagination-bullet').length == 1) {
+                            $('.most_watched_wrapper .swiper-pagination').hide();
+
+                        }
+                    }, 100);
+
+                },
+            },
         });
-        
+
     })
 </script>

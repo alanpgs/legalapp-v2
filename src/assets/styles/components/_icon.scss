@@ -1,15 +1,13 @@
-
 @font-face {
   font-family: "uae-leg";
-  src:url("../fonts/icon/uae-leg.eot");
-  src:url("../fonts/icon/uae-leg.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/icon/uae-leg.eot");
+  src: url("../fonts/icon/uae-leg.eot?#iefix") format("embedded-opentype"),
     url("../fonts/icon/uae-leg.woff") format("woff"),
     url("../fonts/icon/uae-leg.ttf") format("truetype"),
     url("../fonts/icon/uae-leg.svg#uae-leg") format("svg");
   font-weight: normal;
   font-style: normal;
-
-} 
+}
 
 [data-icon]:before {
   font-family: "uae-leg" !important;
@@ -159,4 +157,31 @@
 }
 .icon-pdf:before {
   content: "\4f";
+}
+.icon-alert-icon:before {
+  content: "\50";
+}
+.icon-group-121:before {
+  content: "\51";
+}
+.icon-social-06:before {
+  content: "\52";
+}
+.icon-social-05:before {
+  content: "\53";
+}
+.icon-social-04:before {
+  content: "\54";
+}
+.icon-social-03:before {
+  content: "\55";
+}
+.icon-social-02:before {
+  content: "\56";
+}
+.icon-icon-copy:before {
+  content: "\58";
+}
+.icon-icon-mail:before {
+  content: "\59";
 }

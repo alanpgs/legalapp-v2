@@ -3,7 +3,9 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         for (var links = document.querySelectorAll("[data-href]"), i = 0; i < links.length; i++) links[i].addEventListener("click", clickHandler);
         function clickHandler(e) {
             e.preventDefault();
-            var href = this.getAttribute("data-href"), offsetTop = document.getElementById(href).offsetTop;
+            var href = this.getAttribute("data-href");
+            $("[data-href]").removeClass("active_"), this.classList.add("active_");
+            var topCap = 980 < window.innerWidth ? $("header").height() + 20 : 0, offsetTop = $("#" + href).offset().top - topCap;
             scroll({
                 top: offsetTop,
                 behavior: "smooth"
@@ -23,8 +25,11 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         });
     },
     scrollClass: function() {
+        var lastScrollTop = 0;
         window.addEventListener("scroll", function() {
-            100 < window.scrollY ? document.body.classList.add("scrolled") : document.body.classList.remove("scrolled");
+            10 < window.scrollY ? document.body.classList.add("scrolled") : document.body.classList.remove("scrolled"), 
+            window.scrollY > lastScrollTop ? document.body.classList.remove("scrolling_top") : document.body.classList.add("scrolling_top"), 
+            lastScrollTop = window.scrollY;
         });
     },
     customTab: function(target) {
@@ -49,7 +54,7 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         });
     },
     inputControls: function() {
-        var fields = document.querySelectorAll("input:not([type]),input[type=text]:not(.browser-default),input[type=password]:not(.browser-default),input[type=email]:not(.browser-default),input[type=url]:not(.browser-default),input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea");
+        var fields = document.querySelectorAll("input:-webkit-autofill,input:not([type]),input[type=text]:not(.browser-default),input[type=password]:not(.browser-default),input[type=email]:not(.browser-default),input[type=url]:not(.browser-default),input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea");
         fields && fields.forEach(function(el) {
             el.value.length && el.parentElement.classList.add("active_"), el.addEventListener("focus", function() {
                 el.parentElement.classList.add("active_");

@@ -119,13 +119,13 @@
 
         <nav class="navbar_">
           <ul>
-            <li class="nav_item"><button class="toggler_" data-toggler><span></span></button></li>
+            <li class="nav_item notHide"><button class="toggler_" data-toggler><span></span></button></li>
             <li class="nav_item_icon"><a href="index.html"><i class="icon-home"></i></a></li>
-            <li class="nav_item_icon"><a href="login.html"><i class="icon-user"></i></a></li>
+            <li class="nav_item_icon notHide"><a href="login.html"><i class="icon-user"></i></a></li>
             <li class="nav_item_icon"><a href="#"><i class="icon-phone"></i></a></li>
             <li class="nav_item"><a href="#">دستور الدولة</a></li>
             <li class="nav_item"><a href="#">التشريعات</a></li>
-            <li class="nav_item"><a href="register_ar.html">EN</a></li>
+            <li class="nav_item notHide"><a href="register_ar.html">EN</a></li>
           </ul>
         </nav>
 
@@ -142,7 +142,7 @@
           <img src="assets/images/logo.svg" alt="UAE">
         </a>
       </div>
-      
+
 
     </div>
   </div>
@@ -177,7 +177,6 @@
     </div>
   </div>
 </header>
-
 <main class="page_">
 
     <div class="breadcrumb_wrapper">
@@ -185,7 +184,7 @@
             <ul class="breadcrumb_">
                 <li><a href="index.html">الصفحة الرئيسية</a></li>
                 <li><span>يسجل</span></li>
-            </ul>   
+            </ul>
         </div>
     </div>
 
@@ -209,13 +208,15 @@
                         <label>هل أنت مستخدم جهة حكومية؟</label>
 
                         <div class="input_checkbox">
-                            <input type="radio" name="user" checked/>
+                            <label id="is_entity_user-error" class="error" for="is_entity_user">يجب تعبئة هذا
+                                الحقل</label>
+                            <input type="radio" name="user" checked />
                             <span></span>
                             <label>نعم</label>
                         </div>
 
                         <div class="input_checkbox">
-                            <input type="radio" name="user"/>
+                            <input type="radio" name="user" />
                             <span></span>
                             <label>لا</label>
                         </div>
@@ -229,7 +230,7 @@
 
                 <div class="input_">
                     <select id="entity">
-                        <option readonly >Choose Entity</option>
+                        <option readonly>Choose Entity</option>
                         <option>Entity 1</option>
                         <option>Entity 2</option>
                         <option>Entity 3</option>
@@ -265,6 +266,7 @@
                 <div class="input_">
                     <label for="password">Password</label>
                     <input type="password" name="password" autocomplete="off">
+                    <label for="password" class="error">error</label>
                 </div>
 
                 <div class="input_">
@@ -274,12 +276,12 @@
 
                 <div class="input_ full_">
                     <ul class="requirement_list">
-                        <li>Minimum length of 8 characters</li>
-                        <li>Contains at least one lowercase alphabet (a to z)</li>
-                        <li>Contains at least one uppercase alphabet (A to Z)</li>
-                        <li>Contains at least one number (0 to 9)</li>
-                        <li>Contains at least one special character (~!@#$%-*_^)</li>
-                        <li>Password strength is sufficient</li>
+                        <li class="passed" style="color: green;">Minimum length of 8 characters</li>
+                        <li class="passed" style="color: green;">Contains at least one lowercase alphabet (a to z)</li>
+                        <li style="color: red;">Contains at least one uppercase alphabet (A to Z)</li>
+                        <li style="color: red;">Contains at least one number (0 to 9)</li>
+                        <li style="color: red;">Contains at least one special character (~!@#$%-*_^)</li>
+                        <li style="color: red;">Password strength is sufficient</li>
                     </ul>
                 </div>
 
@@ -519,10 +521,10 @@
 
 <script>
 
-    window.addEventListener('DOMContentLoaded',function() {
+    window.addEventListener('DOMContentLoaded', function () {
 
         const picker = datepicker('#dob', {
-            onSelect: function(event){
+            onSelect: function (event) {
                 console.log(event)
             }
         })

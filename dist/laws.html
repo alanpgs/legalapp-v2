@@ -119,13 +119,13 @@
 
         <nav class="navbar_">
           <ul>
-            <li class="nav_item"><button class="toggler_" data-toggler><span></span></button></li>
+            <li class="nav_item notHide"><button class="toggler_" data-toggler><span></span></button></li>
             <li class="nav_item_icon"><a href="index.html"><i class="icon-home"></i></a></li>
-            <li class="nav_item_icon"><a href="login.html"><i class="icon-user"></i></a></li>
+            <li class="nav_item_icon notHide"><a href="login.html"><i class="icon-user"></i></a></li>
             <li class="nav_item_icon"><a href="#"><i class="icon-phone"></i></a></li>
             <li class="nav_item"><a href="#">دستور الدولة</a></li>
             <li class="nav_item"><a href="#">التشريعات</a></li>
-            <li class="nav_item"><a href="laws_ar.html">EN</a></li>
+            <li class="nav_item notHide"><a href="laws_ar.html">EN</a></li>
           </ul>
         </nav>
 
@@ -142,7 +142,7 @@
           <img src="assets/images/logo.svg" alt="UAE">
         </a>
       </div>
-      
+
 
     </div>
   </div>
@@ -176,8 +176,7 @@
       </div>
     </div>
   </div>
-</header>
-<main class="page_">
+</header><main class="page_">
     <div class="breadcrumb_wrapper">
         <div class="container">
             <ul class="breadcrumb_">
@@ -203,102 +202,112 @@
 
                 <div class="placeholder_">
                     <div class="laws_date_filter">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2023" checked>
-                                    <div class="i_area">
-                                        <div class="no_"><span>2023</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2022">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2022</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2021">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2021</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2020">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2020</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2019">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2019</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2018">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2018</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2017">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2017</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2016">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2016</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2015">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2015</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2014">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2014</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <input type="radio" name="year" value="2013">
-                                    <div class="i_area">
-                                        <div class="no_"><span>2013</span></div>
-                                        <div class="line_"><span></span></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-scrollbar"></div>
+                        <div class="navBox left">
+                            <div class="icon icon-arrow-left"></div>
                         </div>
+                        <div class="sliderWrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2023" checked>
+                                        <div class="i_area">
+                                            <div class="no_"><span>2023</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2022">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2022</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2021">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2021</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2020">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2020</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2019">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2019</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2018">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2018</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2017">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2017</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2016">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2016</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2015">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2015</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2014">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2014</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <input type="radio" name="year" value="2013">
+                                        <div class="i_area">
+                                            <div class="no_"><span>2013</span></div>
+                                            <div class="line_"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <div class="navBox right">
+                            <div class="icon icon-arrow-right"></div>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -314,7 +323,7 @@
                         <input type="checkbox" id="name2">
                         <span>
                         </span>
-                        <label for="name2">مراسيم بقوانين   </label>
+                        <label for="name2">مراسيم بقوانين </label>
                     </div>
 
                     <div class="c_checkbox">
@@ -384,7 +393,8 @@
 
                             <div class="body_tr">
                                 <div class="body_td">
-                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات
+                                        العربية المتحدة</a>
                                     <span>05</span>
                                     <span>قانون اتحادي</span>
                                     <ul class="icon_link_list">
@@ -397,7 +407,8 @@
 
                             <div class="body_tr success_">
                                 <div class="body_td">
-                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات
+                                        العربية المتحدة</a>
                                     <span>27</span>
                                     <span>قانون اتحادي</span>
                                     <ul class="icon_link_list">
@@ -405,7 +416,8 @@
                                         <li><a href="#"><i class="icon-share"></i></a></li>
                                         <li><a href="#"><i class="icon-download"></i></a></li>
                                     </ul>
-                                    <div class="tag_ tooltip" title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
+                                    <div class="tag_ tooltip"
+                                        title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
                                 </div>
                             </div>
 
@@ -433,13 +445,15 @@
                                         <li><a href="#"><i class="icon-share"></i></a></li>
                                         <li><a href="#"><i class="icon-download"></i></a></li>
                                     </ul>
-                                    <div class="tag_ tooltip" title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
+                                    <div class="tag_ tooltip"
+                                        title="قانون المعاملات المدنية لدولة الإمارات العربية المتحدة"></div>
                                 </div>
                             </div>
 
                             <div class="body_tr">
                                 <div class="body_td">
-                                    <a href="residents-laws.html">قانون الإثبات في المعاملات المدنية والتجارية</a>
+                                    <a href="residents-laws.html">قانون الإثبات في المعاملات المدنية
+                                        والتجارية</a>
                                     <span>23</span>
                                     <span>قانون اتحادي</span>
                                     <ul class="icon_link_list">
@@ -478,7 +492,8 @@
 
                             <div class="body_tr">
                                 <div class="body_td">
-                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات
+                                        العربية المتحدة</a>
                                     <span>30</span>
                                     <span>قانون اتحادي</span>
                                     <ul class="icon_link_list">
@@ -491,7 +506,8 @@
 
                             <div class="body_tr">
                                 <div class="body_td">
-                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</a>
+                                    <a href="residents-laws.html">قانون المعاملات المدنية لدولة الإمارات
+                                        العربية المتحدة</a>
                                     <span>30</span>
                                     <span>قانون اتحادي</span>
                                     <ul class="icon_link_list">
@@ -741,32 +757,32 @@
 
 
 <script>
-    const filterSize = ()=> {
+    const filterSize = () => {
         var x = document.querySelector('.laws_filter').offsetHeight;
         document.body.style.setProperty('--filter-height', x + "px");
     }
 
     var swiperCount = document.querySelectorAll('.placeholder_ .swiper-slide').length;
 
-    var swiperLength =  swiperCount > 12 ? 12 : swiperCount;
+    var swiperLength = swiperCount > 12 ? 12 : swiperCount;
 
     var swiperDir = window.innerWidth < 1200 ? 'horizontal' : 'vertical';
 
-    const getyearValue = (target, callback)=> {
+    const getyearValue = (target, callback) => {
         var t = document.querySelectorAll('.placeholder_ input[type=radio]');
 
-        t.forEach((el, indx)=> {
-            el.addEventListener('click', ()=> {
+        t.forEach((el, indx) => {
+            el.addEventListener('click', () => {
                 callback(el.value, indx)
             })
         });
     }
-    
-    window.addEventListener('DOMContentLoaded', ()=> {
-         
-         $('.tooltip').tooltipster();
 
-         const select1 = new SlimSelect({
+    window.addEventListener('DOMContentLoaded', () => {
+
+        $('.tooltip').tooltipster();
+
+        const select1 = new SlimSelect({
             select: '#select1'
         })
 
@@ -781,10 +797,16 @@
             slidesPerView: 6,
             spaceBetween: 0,
             direction: swiperDir,
+            preventClicks: true,
+            a11y: false,
             scrollbar: {
                 el: '.placeholder_ .swiper-scrollbar',
                 draggable: true,
                 hide: true,
+            },
+            navigation: {
+                nextEl: '.placeholder_ .navBox.right',
+                prevEl: '.placeholder_ .navBox.left'
             },
             mousewheel: {
                 invert: false,
@@ -801,18 +823,20 @@
             },
         });
 
-        getyearValue('.placeholder_ input[type=radio]', (value, index)=> {
-            console.log(+value);
-            dateSwiper.slideTo(index);
+        getyearValue('.placeholder_ input[type=radio]', (value, index) => {
+            console.log(value);
+            //dateSwiper.slideTo(index);
         })
 
-        
+
+
+
     })
 
-    window.addEventListener('resize', ()=> {
+    window.addEventListener('resize', () => {
         filterSize();
     })
-   
+
 </script>
 </body>
 </html>
