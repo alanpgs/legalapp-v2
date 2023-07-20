@@ -400,6 +400,61 @@ html[dir="ltr"] {
   }
 }
 
+.btn_icon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 500;
+  overflow: hidden;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-size: calc(var(--font-size));
+  padding: 0;
+  transition: all 0.3s ease;
+  height: 3rem;
+  width: 3rem;
+  grid-gap: 0.5rem;
+  border-radius: var(--ss-border-radius);
+  font-size: 1.35rem;
+
+  &.outline_ {
+    background: var(--white-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+
+  &.secondary_ {
+    background: var(--secondary-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: var(--primary-color);
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+  }
+
+
+}
+
 html[dir="rtl"] {
   .icon_link_list li a {
     .icon-back {
