@@ -15,7 +15,9 @@ var webControls = {
       e.preventDefault();
       var href = this.getAttribute("data-href");
       $("[data-href]").removeClass("active_");
+      $(".law_main_content .content_").removeClass("active_");
       this.classList.add("active_");
+      $("#" + href).addClass('active_');
       // var offsetTop = document.getElementById(href).offsetTop;
       var topCap = window.innerWidth > 980 ? $("header").height() + 20 : 0;
       var offsetTop = $("#" + href).offset().top - topCap;

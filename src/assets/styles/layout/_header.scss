@@ -40,6 +40,10 @@ header {
     width: 37.5%;
     z-index: 2;
 
+    @media only screen and (min-width: 1024px) and (max-width: 1370px) and (orientation: landscape){
+      width: 32%;
+    }
+
     @media only screen and (max-width: 1200px) {
       width: auto;
     }
@@ -76,6 +80,11 @@ header {
       grid-gap: 1.25rem;
       padding: 0;
       margin: 0;
+
+      @media only screen and (min-width: 1024px) and (max-width: 1450px) and (orientation: landscape){
+        grid-gap: 1rem;
+      } 
+
       @media only screen and (max-width: 767px) {
         grid-gap: 0.75rem;
       }
@@ -98,6 +107,27 @@ header {
             position: relative;
             display: flex;
             font-size: calc(var(--font-size) * 1.25);
+          }
+
+          &.lang_btn{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            transition: all 0.3s ease;
+            color: var(--white-color);
+            width: calc(var(--font-size) * 1.75);
+            height: calc(var(--font-size) * 1.75);
+            border-radius: 50%;
+            font-size: calc(var(--font-size) * 0.8);
+
+            &:hover{
+              transform: scale(0.9);
+              opacity: 0.75;
+            }
+
           }
         }
       }
@@ -373,7 +403,8 @@ header {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--bg-color);
+      background: var(--primary-color);
+      background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
       transform-origin: top;
       transition: transform 0.5s ease;
       transform: scaleY(0);
@@ -441,7 +472,7 @@ header {
               display: inline-block;
               font-weight: bold;
               font-size: calc(var(--font-size) * 3);
-              color: var(--text-color);
+              color: var(--white-color);
 
               @media only screen and (max-width: 767px) {
                 font-size: calc(var(--font-size) * 1.25);
@@ -491,6 +522,15 @@ header {
     overflow: hidden;
   }
   header {
+
+    .toggler_ {
+      span{
+        &:before, &:after{
+          background-color: var(--white-color);
+        }
+      }
+    }
+
     .nav_mega_menu {
       pointer-events: auto;
       &:before {
@@ -523,6 +563,34 @@ header {
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    .navbar_{
+      &>ul{
+        &>li {
+          a{
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+
+    .nav_search {
+      form{
+        background-color: rgba(255, 255, 255, 0.065);
+
+        button{
+          color: var(--white-color);
+        }
+
+        input[type=text]{
+          color: var(--white-color);
+
+          &::placeholder{
+            color: var(--white-color);
           }
         }
       }

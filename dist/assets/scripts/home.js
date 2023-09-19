@@ -4,7 +4,8 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         function clickHandler(e) {
             e.preventDefault();
             var href = this.getAttribute("data-href");
-            $("[data-href]").removeClass("active_"), this.classList.add("active_");
+            $("[data-href]").removeClass("active_"), $(".law_main_content .content_").removeClass("active_"), 
+            this.classList.add("active_"), $("#" + href).addClass("active_");
             var topCap = 980 < window.innerWidth ? $("header").height() + 20 : 0, offsetTop = $("#" + href).offset().top - topCap;
             scroll({
                 top: offsetTop,

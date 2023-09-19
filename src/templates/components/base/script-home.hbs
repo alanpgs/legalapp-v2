@@ -3,6 +3,7 @@
 <script src="{{assets}}/scripts/lib/jquery-migrate-3.3.2.min.js"></script>
 <script src="{{assets}}/scripts/min/home_plugins.js"></script>
 <script src="{{assets}}/scripts/min/home.js"></script>
+<script src="{{assets}}/scripts/vendor/color-calendar.js"></script>
 
 <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,13 @@
                  // }
              }
          })*/
+
+         $('[data-tooltip]').tooltipster({
+            animation: 'fade',
+            trigger: 'hover',
+            position: 'right'
+        })
+
 
         var bannerSwiper = new Swiper(".banner_wrapper .banner_content .swiper-container", {
             effect: 'fade',
@@ -84,7 +92,7 @@
                 },
                 1024: {
                     slidesPerView: 3,
-                    spaceBetween: 35,
+                    spaceBetween: 45,
                 },
             },
         });

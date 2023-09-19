@@ -2,6 +2,7 @@
     "home":[  
         "src/assets/scripts/vendor/swiper.js",
         "src/assets/scripts/vendor/jquery.fancybox.js",
+        "src/assets/scripts/vendor/tooltipster.bundle.min.js",
         "src/assets/scripts/vendor/in-view.min.js",
         "src/assets/scripts/vendor/jquery.stickit.js"        
     ],

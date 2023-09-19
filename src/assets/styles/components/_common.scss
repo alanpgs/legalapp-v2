@@ -17,6 +17,24 @@
   background-color: var(--third-color);
 }
 
+.title_grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  gap: 1rem;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 1200px){
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  &.margin_bottom{
+    margin-bottom: 2.5rem;
+  }
+
+}
+
 .title_wrapper {
   position: relative;
   display: flex;
@@ -57,8 +75,9 @@
     display: block;
     margin: 0;
     line-height: 1.5;
-    font-size: calc(var(--font-size) * 2.5);
+    font-size: calc(var(--font-size) * 3);
     overflow: hidden;
+
 
     span {
       position: relative;
@@ -166,7 +185,7 @@
 
 // Popup
 .fancybox-bg {
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 .fancybox-close-small {
@@ -350,6 +369,8 @@ html[dir="rtl"] {
   min-width: 55%;
   max-width: 55%;
   padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
 
   @media only screen and (min-width: 767px) and (max-width: 1200px) {
     min-width: 80%;
@@ -359,6 +380,17 @@ html[dir="rtl"] {
   @media only screen and (max-width: 767px) {
     min-width: 90%;
     max-width: 90%;
+  }
+
+  .fancybox-close-small {
+    background-color: var(--white-color);
+    border-radius: 0px 0px 1rem 0px;
+
+    svg {
+      path{
+        fill: var(--text-color);
+      }
+    }
   }
 
   .inner_grid {
@@ -379,8 +411,20 @@ html[dir="rtl"] {
       align-items: center;
       padding: 1.75em;
       padding-top: 3rem;
+      background: var(--primary-color);
+      background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+
       @media only screen and (max-width: 767px) {
         padding-top: 1.75rem;
+      }
+
+      p,h4,h3,h2{
+        color: var(--white-color)
+      }
+
+      hr{
+        margin: 1.5rem 0;
+        opacity: 0.35;
       }
     }
 
@@ -597,4 +641,83 @@ html[dir="rtl"] {
 
 .mTop1 {
   margin-top: 1.5rem;
+}
+
+
+.tags_{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .tag_{
+    position: relative;
+    display: inline-block;
+    background-color: #EFE4E7;
+    font-weight: 500;
+    padding: 0.25rem 1.25rem;
+    border-radius: 1.5rem;
+    font-size: calc(var(--font-size) * 1);
+  }
+}
+
+// Facelift CSS
+
+.floating_links{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  gap: 1.25rem;
+  padding: 0 0.75rem;
+
+  .item_{
+    position: relative;
+    display: block;
+  }
+
+  .link_{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--primary-color);
+    background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    transition: all 0.3s ease;
+
+    svg{
+      position: relative;
+      display: block;
+      width: 55%;
+      height: auto;
+    }
+
+    &:hover, &:focus{
+      transform: scale(1.1);
+    }
+
+  }
+}
+
+.table_pagination ul li.page-item.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+html[dir=ltr]{
+  .floating_links{
+    left: auto;
+    right: 0;
+  }
 }

@@ -7,11 +7,19 @@ footer {
 
     .footer_top{
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         height: auto;
         padding: 1.25rem 0;
+        grid-gap: 1.25rem;
+        flex-wrap: wrap;
         
+        @media only screen and (max-width: 767px){
+            justify-content: center;
+        }
+
         &:before{
             content: '';
             position: absolute;
@@ -28,14 +36,14 @@ footer {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            grid-gap: 1rem;
+            grid-gap: 0.5rem;
 
             label{
                 position: relative;
                 display: block;
                 margin: 0;
                 font-size: calc(var(--font-size) * 0.95);
-                font-weight: 500;
+                font-weight: 300;
             }
         }
 
@@ -114,6 +122,50 @@ footer {
                 }
             }
         }
+
+        .f_logo_link{
+            position: relative;
+            display: block;
+            width: auto;
+            height: 3rem;
+
+            img{
+                position: relative;
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .f_info_text{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            span{
+                position: relative;
+            }
+
+            strong{
+                font-weight: 500;
+                color: var(--primary-color);
+            }
+
+            i{
+                position: relative;
+                display: block;
+                width: 1.25rem;
+                height: auto;
+
+                svg{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
     }
 
     .footer_bottom{
