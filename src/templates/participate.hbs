@@ -22,7 +22,7 @@
                 <div class="input_ full_">
                     <div class="title_wrapper have_margin between_">
                         <div class="section_title">
-                            <h2><span>يشارك</span></h2>
+                            <h2><span>مشاركة</span></h2>
                         </div>
 
                         <ul class="icon_link_list">
@@ -31,31 +31,126 @@
                     </div>
                 </div>  
 
+
+                <div class="participate_description full_">
+                    <div class="item_">
+                        <h3>وصف</h3>
+                        <p>اعتمد مجلس الوزراء إصدار لائحة بمخالفات التدابير والإجراءات والتعليمات الاحترازية للحد من انتشار فيروس كورونا، والتي تتضمن قائمة بأهم المخالفات التي قد يتم ارتكابها في ظل</p>
+                    </div>
+                    <div class="swiper_">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="item_">
+                                    <h4>التشريعات ذات الصلة</h4>
+                                    <p>اللائحة التنفيذية للقانون الاتحادي رقم (12) لسنة 2014 بشأن تنظيم مهنة مدققي الحسابات</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item_">
+                                    <h4>التشريعات ذات الصلة</h4>
+                                    <p>اللائحة التنفيذية للقانون الاتحادي رقم (12) لسنة 2014 بشأن تنظيم مهنة مدققي الحسابات</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item_">
+                                    <h4>التشريعات ذات الصلة</h4>
+                                    <p>اللائحة التنفيذية للقانون الاتحادي رقم (12) لسنة 2014 بشأن تنظيم مهنة مدققي الحسابات</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
                 <div class="input_ full_">
+                    <hr>
+                </div>
+
+                <div class="input_">
                     <label for="description">Description</label>
                     <textarea name="nescription"></textarea>
                 </div>
                 
-                <div class="input_ full_">
-                    <div class="text_area">
-                        <h4>القانون ذو الصلة</h4>
-                        <p>قانون اتحادي رقم (51) لسنة 2006 في شأن مكافحة جرائم الاتجار بالبشر</p>
-                    </div>
-                </div>
+                <div class="attachment_group">
+                    <div class="input_ attachment_">
+                        <input type="file" class="form-control uploader" data-type="attachment" data-mimes="pdf,jpeg,png,jpg"  id="attachment" name="attachment" data-parsley-group="step2" data-parsley-required-message="" />
+                        <div class="choose">
+                            <div class="choose-btn">مرفق</div>
+                            <div class="choose-file uploadFileName"></div>
+                            <div class="uploadPercentage"></div>
 
-                <div class="input_ full_ attachment_">
-                    <input type="file" class="form-control uploader" data-type="attachment" data-mimes="pdf,jpeg,png,jpg"  id="attachment" name="attachment" data-parsley-group="step2" data-parsley-required-message="" />
-                    <div class="choose">
-                        <div class="choose-btn">مرفق</div>
-                        <div class="choose-file uploadFileName"></div>
-                        <div class="uploadPercentage"></div>
-
-                        <div class="uploadProgressWrapper">
-                        <div class="uploadProgress"></div>
+                            <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="info_">
+                        <span>(Attachment should be in pdf or jpeg or png format and size less than 3 MB)</span>
+                    </div>
                 </div>
 
+                <div class="attachment_list full_">
+                    <label>Attachment List</label>
+
+                    <ul class="list_">
+                        <li>
+                            <div class="attach_">
+                                <div class="icon_"><i class="icon-paper"></i></div>
+                                <div class="text_">
+                                    <p>File-name-here.jpg</p>
+                                    <span>967Kb</span>
+                                </div>
+                                <button class="close_"></button>
+                                
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="attach_">
+                                <div class="icon_"><i class="icon-paper"></i></div>
+                                <div class="text_">
+                                    <p>File-name-here.jpg</p>
+                                    <span>967Kb</span>
+                                </div>
+                                <button class="close_"></button>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="attach_">
+                                <div class="icon_"><i class="icon-paper"></i></div>
+                                <div class="text_">
+                                    <p>File-name-here.jpg</p>
+                                    <span>967Kb</span>
+                                </div>
+
+                                <button class="close_"></button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="attach_">
+                                <div class="icon_"><i class="icon-paper"></i></div>
+                                <div class="text_">
+                                    <p>File-name-here.jpg</p>
+                                    <span>967Kb</span>
+                                </div>
+                                <button class="close_"></button>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+     
+{{!-- 
                 <div class="input_ full_">
 
                     <div class="laws_table_wrapper">
@@ -95,7 +190,7 @@
 
                     </div>
 
-                </div>
+                </div> --}}
 
                 <div class="btn_group full_ ">
                     <button type="submit" class="btn_">
@@ -113,3 +208,15 @@
 
 {{> footer}} 
 {{> script-page}}
+
+<script>
+    window.addEventListener('DOMContentLoaded', ()=> {
+        var swiper = new Swiper(".participate_description .swiper_", {
+            spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+    })
+</script>

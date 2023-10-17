@@ -74,7 +74,7 @@
     position: relative;
     display: block;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.75;
     font-size: calc(var(--font-size) * 3);
     overflow: hidden;
 
@@ -677,7 +677,7 @@ html[dir="rtl"] {
   z-index: 99;
   gap: 1.25rem;
   padding: 0 0.75rem;
-
+  pointer-events: none;
   .item_{
     position: relative;
     display: block;
@@ -695,7 +695,8 @@ html[dir="rtl"] {
     background: var(--primary-color);
     background: linear-gradient(120deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     transition: all 0.3s ease;
-
+    pointer-events: auto;
+    
     svg{
       position: relative;
       display: block;

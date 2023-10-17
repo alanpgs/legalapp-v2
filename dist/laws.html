@@ -840,8 +840,8 @@
 
 
         var dateSwiper = new Swiper(".placeholder_ .swiper-container", {
-            slidesPerView: 6,
-            spaceBetween: 0,
+            slidesPerView: window.innerWidth < 768 ? 5 : 6,
+            spaceBetween: 10,
             direction: swiperDir,
             preventClicks: true,
             a11y: false,
@@ -860,11 +860,11 @@
             breakpoints: {
                 768: {
                     slidesPerView: 8,
-                    spaceBetween: 0,
+                    spaceBetween: 10,
                 },
                 1200: {
                     slidesPerView: 10,
-                    spaceBetween: 0,
+                    spaceBetween: 15,
                 },
             },
         });

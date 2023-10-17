@@ -272,7 +272,7 @@ video::-webkit-media-controls-volume-slider {
           transform: translateY(50%);
           opacity: 0;
           transition: all 0.6s var(--ease);
-          line-height: 1.35;
+          line-height: 1.5;
 
           &:nth-child(1) {
             transition-delay: 0.2s;
@@ -845,7 +845,10 @@ video::-webkit-media-controls-volume-slider {
         .img_{
           overflow: hidden;
           border: 1px solid #F8F1F2;
-
+          width: 60%;
+          left: 50%;
+          transform: translateX(-50%);
+          
           picture{
             transition: all 0.3s ease;
           }
@@ -1186,7 +1189,7 @@ video::-webkit-media-controls-volume-slider {
 
 }
 
-.is-loaded {
+.is-loaded { 
   &.init-delay {
     .home_banner {
       
@@ -1331,3 +1334,5 @@ html[dir=ltr]{
     }
   }
 }
+
+
