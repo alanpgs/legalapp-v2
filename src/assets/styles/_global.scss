@@ -91,10 +91,10 @@ ol,ul{
     margin-left: auto;
     padding: 0 16px;
 
-    @media screen and (min-width:1920px) {
+    @media screen and (min-width:1600px) {
         width: 100%;
-        max-width: 1740px;
-        min-width: 1740px;
+        max-width: 1500px;
+        min-width: 1500px;
     }
 
     @media only screen and (max-width: 1370px){

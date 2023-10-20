@@ -105,13 +105,27 @@ var webControls = {
   },
   togglerButton: function () {
     var x = document.querySelector("[data-toggler]");
+    var sideMenuCloseBtn = document.querySelector('[data-side-menu-close]');
+    var sideMenuOverlay = document.querySelector('.sidemenu_overlay');
 
     if (!x) return;
 
-    x.addEventListener("click", function () {
+    var menuFn = function(){
       document.body.classList.toggle("menu_active");
       x.classList.toggle("active_");
+    }
+
+    x.addEventListener("click", function () {
+      menuFn();
     });
+
+    sideMenuCloseBtn.addEventListener('click', function(){
+      menuFn();
+    })
+
+    sideMenuOverlay.addEventListener('click', function(){
+      menuFn();
+    })
   },
   inputControls: function () {
     var fields = document.querySelectorAll(

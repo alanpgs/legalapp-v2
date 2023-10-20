@@ -6,6 +6,7 @@
         <span>آخر تحديث للموقع بتاريخ:</span>
         <strong>07/06/2023 08:16:59</strong>
       </div>
+
       <div class="rating_">
         <label>تقييم محتوى الموقع</label>
         <ul class="rating_star_list" data-star-rating>
@@ -155,22 +156,37 @@
         <strong>125455</strong>
       </div>
 
-      <a href="#" class="f_logo_link">
-        <img src="{{assets}}/images/uae.png" alt="UAE">
-      </a>
+      <ul class="footer_social_links">
+        <li><a href="#"><i class="icon-twitter-icon"></i></a></li>
+        <li><a href="#"><i class="icon-insta"></i></a></li>
+      </ul>
+
+      <div class="btn_group">
+
+        <a href="#" class="f_logo_link">
+          <img src="{{assets}}/images/uae-logo-falcon.png" alt="UAE">
+        </a>
+
+        <a href="#" class="f_logo_link">
+          <img src="{{assets}}/images/uae.png" alt="UAE">
+        </a>
+        
+        
+      </div>
     </div>
+
     <div class="footer_bottom">
       <ul>
-        <li><a href="#">WCAG Standards 2.0 AAA</a></li>
-        <li><a href="{{menuLink 'terms'}}">الشروط والأحكام</a></li>
-        <li><a href="{{menuLink 'privacy'}}">سياسة الخصوصية</a></li>
-        <li><a href="{{menuLink 'about'}}">نبذة</a></li>
+        <li><a href="#">الشروط والأحكام</a></li>
+        <li><a href="{{menuLink 'terms'}}">سياسة الخصوصية</a></li>
+        <li><a href="{{menuLink 'privacy'}}">اتصل بنا</a></li>
+        <li><a href="{{menuLink 'about'}}">WCAG Standards 2.0 AAA</a></li>
       </ul>
 
       <div class="content_">
-        <p>حقوق التأليف والنشر © 2023 وزارة شؤون مجلس الوزراء. جميع الحقوق محفوظة.</p>
-        
+        <p>2023 مجلس الوزراء، جميع الحقوق محفوظة </p>
       </div>
+      
     </div>
   </div>
 
@@ -184,6 +200,7 @@
 <script>
 
   const footerHeight = document.querySelector('footer').offsetHeight;
+  const headerHeight = document.querySelector('header').offsetHeight;
 
   const ratingFunc = (target, callback)=> {
   
@@ -224,6 +241,7 @@
   window.addEventListener('DOMContentLoaded', ()=> {
 
     document.body.style.setProperty('--footer-height', footerHeight + "px");
+    document.body.style.setProperty('--header-height', headerHeight + "px");
 
     ratingFunc('[data-star-rating]', function(value) {
       console.log(value)

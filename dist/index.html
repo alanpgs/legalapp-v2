@@ -42,8 +42,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #F6F6F6;
-        transform-origin: top;
+        background-color: #FFFFFF;
+        transform-origin: bottom;
         transition: all 0.8s cubic-bezier(0.23, 0.48, 0.26, 0.94) 0.2s;
     }
     
@@ -120,24 +120,65 @@
         <nav class="navbar_">
           <ul>
             <li class="nav_item notHide"><button class="toggler_" data-toggler><span></span></button></li>
-            <li class="nav_item notHide"><a href="index_ar.html" class="lang_btn">EN</a></li>
             <li class="nav_item_icon"><a href="index.html"><i class="icon-home"></i></a></li>
             <li class="nav_item_icon notHide"><a href="login.html"><i class="icon-user"></i></a></li>
-            <li class="nav_item_icon"><a href="#"><i class="icon-phone"></i></a></li>
-            <li class="nav_item"><a href="#">دستور الدولة</a></li>
-            <li class="nav_item"><a href="#">التشريعات</a></li>
+            <li class="nav_item notHide"><a href="index_ar.html" class="lang_btn">EN</a></li>
+            <li class="nav_item"><a href="#">دستور الإمارات</a></li>
+            <li class="nav_item dropdown_">
+              <a href="#">التشريعات</a>
+              <div class="dropdown_menu">
+                <div class="inner_">
+                  <div class="dropdown_wrapper">
+                      <div class="container">
+                        <div class="dropdown_content">
+
+                          <div class="dropdown_title">
+                            <h3>التشريعات</h3>
+                          </div>
+
+                          <div class="dropdown_nav">
+                            <nav>
+                              <ul>
+                                <li><a href="#">التعليم والرعاية الصحية</a></li>
+                                <li><a href="#">القضاء والأمن</a></li>
+                                <li><a href="#">الرعاية الاجتماعية </a></li>
+                                <li><a href="#">الإقامة والعمل</a></li>
+                                <li><a href="#">الأحوال والمعاملات المدنية</a></li>
+                                <li><a href="#">البيئة والموارد الطبيعية</a></li>
+                                <li><a href="#">الاقتصاد والصناعة وممارسة الأعمال</a></li>
+                                <li><a href="#">الاتصالات والتكنولوجيا </a></li>
+                                <li><a href="#">الاتصالات والتكنولوجيا </a></li>
+                                <li><a href="#">تشريعات أخرى</a></li>
+                                <li><a href="#">المال والضريبة</a></li>
+                                <li><a href="#">الطاقة والنقل والبنية التحتية</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_item"><a href="#">المنظومة التشريعية</a></li>
+            <li class="nav_item"><a href="#">مجلس الوزراء</a></li>
+            <li class="nav_item">
+              <div class="nav_search">
+                <form action="search.html">
+                  <input type="text" placeholder="ابحث عن التشريع هنا">
+                  <button type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div>
+            </li>
           </ul>
         </nav>
 
-        <div class="nav_search">
-          <form action="search.html">
-            <input type="text" placeholder="بحث">
-            <button type="submit"><i class="icon-search"></i></button>
-          </form>
-        </div>
       </div>
 
       <div class="nav_logo">
+        <a href="index.html" class="nav_link">
+          <img src="assets/images/uae.png" alt="UAE">
+        </a>
         <a href="index.html" class="nav_link">
           <img src="assets/images/logo.svg" alt="UAE">
         </a>
@@ -146,788 +187,535 @@
 
     </div>
   </div>
+</header>
 
-  <div class="nav_mega_menu">
+<div class="sidemenu_container">
+  <div class="sidemenu_overlay"></div>
+  <div class="sidemenu_wrapper">
 
-    <div class="bg_"><img src="assets/images/bg-menu.png" alt="UAE" loading="lazy"></div>
-
-    <div class="container">
-      <div class="menu_container">
-
-        <div class="nav_search">
-          <form action="#">
-            <input type="text" placeholder="بحث">
-            <button type="submit"><i class="icon-search"></i></button>
-          </form>
-        </div>
-
-        <nav class="mega_navbar">
-          <ul>
-            <li class="nav_item"><a href="index.html"> الرئيسية</a></li>
-            <li class="nav_item"><a href="news.html">الأخبار</a></li>
-            <li class="nav_item"><a href="about.html">معلومات عنا</a></li>
-            <li class="nav_item"><a href="faq.html">أسئلة متكررة</a></li>
-            <li class="nav_item"><a href="constitution.html">الدستور</a></li>
-            <li class="nav_item"><a href="contact.html">تواصل معنا</a></li>
-            <li class="nav_item"><a href="laws.html">التشريعات</a></li>
-            <li class="nav_item"><a href="login.html">تسجيل الدخول</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="sidemenu_close_bar">
+      <button data-side-menu-close>
+        <i class="icon-arrow-right"></i>
+      </button>
     </div>
-  </div>
-</header><section class="home_banner" id="home">
 
-  <div class="container">
-    <div class="banner_wrapper">
-
-      <div class="banner_content">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="content_">
-                <h2>
-                  <span>تشريعات الإمارات</span>
-                  <span>العربية المتحدة</span>
-                </h2>
-                <p>تماشياً مع الاستراتيجية التي أطلقتها الأمانة العامة لمجلس الوزراء في رفع جودة التشريعات الاتحادية في
-                  عام 2015 أنشأ مكتب الشؤون القانونية في الأمانة العامة لمجلس الوزراء قاعدة بيانات إلكترونية تتضمن أهم
-                  التشريعات الاتحادية في دولة الإمارات العربية المتحدة منذ نشأتها عام 1971 وحتى الآن</p>
-                <div class="btn_group">
-                  <a href="#" class="btn_">
-                    <span>المزيد</span>
-                    <i class="icon-arrow-left"></i>
-                  </a>
-                
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="content_">
-                <h2>
-                  <span>تشريعات الإمارات</span>
-                  <span>العربية المتحدة</span>
-                </h2>
-                <p>تماشياً مع الاستراتيجية التي أطلقتها الأمانة العامة لمجلس الوزراء في رفع جودة التشريعات الاتحادية في
-                  عام 2015 أنشأ مكتب الشؤون القانونية في الأمانة العامة لمجلس الوزراء قاعدة بيانات إلكترونية تتضمن أهم
-                  التشريعات الاتحادية في دولة الإمارات العربية المتحدة منذ نشأتها عام 1971 وحتى الآن</p>
-                <div class="btn_group">
-                  <a href="#" class="btn_">
-                    <span>المزيد</span>
-                    <i class="icon-arrow-left"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="content_">
-                <h2>
-                  <span>تشريعات الإمارات</span>
-                  <span>العربية المتحدة</span>
-                </h2>
-                <p>تماشياً مع الاستراتيجية التي أطلقتها الأمانة العامة لمجلس الوزراء في رفع جودة التشريعات الاتحادية في
-                  عام 2015 أنشأ مكتب الشؤون القانونية في الأمانة العامة لمجلس الوزراء قاعدة بيانات إلكترونية تتضمن أهم
-                  التشريعات الاتحادية في دولة الإمارات العربية المتحدة منذ نشأتها عام 1971 وحتى الآن</p>
-                <div class="btn_group">
-                  <a href="#" class="btn_">
-                    <span>المزيد</span>
-                    <i class="icon-arrow-left"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content_">
-                <h2>
-                  <span>تشريعات الإمارات</span>
-                  <span>العربية المتحدة</span>
-                </h2>
-                <p>تماشياً مع الاستراتيجية التي أطلقتها الأمانة العامة لمجلس الوزراء في رفع جودة التشريعات الاتحادية في
-                  عام 2015 أنشأ مكتب الشؤون القانونية في الأمانة العامة لمجلس الوزراء قاعدة بيانات إلكترونية تتضمن أهم
-                  التشريعات الاتحادية في دولة الإمارات العربية المتحدة منذ نشأتها عام 1971 وحتى الآن</p>
-                <div class="btn_group">
-                  <a href="#" class="btn_">
-                    <span>المزيد</span>
-                    <i class="icon-arrow-left"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="banner_image">
-        <div class="image_capsule_wrapper">
-
-          <div class="item_">
-            <div class="placeholder_capsule"></div>
-          </div>
-
-          <div class="item_">
-            <div class="img_capsule">
-              <div class="img_">
-                  <picture>
-                    <source srcset="assets/images/banner-img-02.webp" type="image/webp">
-                    <source srcset="assets/images/banner-img-02.jpg" type="image/jpeg">
-                    <img src="assets/images/banner-img-02.webp" alt="UAE">
-                  </picture>
-                </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
+    <div class="sidemenu_navbar">
+      <nav>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">معلومات عنا</a></li>
+          <li><a href="#">الدستور</a></li>
+          <li><a href="#">التشريعات</a></li>
+          <li><a href="#">الأخبار</a></li>
+          <li><a href="#">أسئلة متكررة</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
 
-<div class="floating_links">
-  <div class="item_">
-    <a href="#introPopup" class="link_" data-tooltip title="مشاركة" data-fancybox>
-      <svg xmlns="http://www.w3.org/2000/svg" width="35.449" height="35.446" viewBox="0 0 35.449 35.446">
-        <g id="Group_5082" data-name="Group 5082" transform="translate(548 32)">
-          <path id="Path_5873" data-name="Path 5873" d="M-538.448-32a2.172,2.172,0,0,1,1.452.972,9.977,9.977,0,0,1,.516,1.41,6.058,6.058,0,0,1,1.215.014,2.168,2.168,0,0,1,1.721,2.144c.01.437,0,.874,0,1.3a6.131,6.131,0,0,1,1.074-.063,2.194,2.194,0,0,1,1.967,2.219c.014.865,0,1.73,0,2.6v.405a2.243,2.243,0,0,1,1.979.531,2.2,2.2,0,0,1,.734,1.817h1.659v-2.682c0-.923,0-1.846,0-2.769a2.211,2.211,0,0,1,2.906-2.246c.033.009.067.01.131.019a2.314,2.314,0,0,1,.831-1.958,2.15,2.15,0,0,1,1.407-.5c1.261,0,2.008.829,2.223,2.392a7.208,7.208,0,0,1,1.333.014,2.138,2.138,0,0,1,1.686,2.059c.012.46,0,.921,0,1.409.221-.037.418-.082.617-.1a2.185,2.185,0,0,1,2.422,2.136c.018,2.376.031,4.753-.008,7.129a7.674,7.674,0,0,1-1.246,4.012.692.692,0,0,1-.951.289.675.675,0,0,1-.234-.987,7.624,7.624,0,0,0,1.071-4.294c-.035-2-.007-3.991-.01-5.987a.832.832,0,0,0-.641-.9.821.821,0,0,0-1.016.869c-.006,1.269,0,2.538,0,3.807a2.682,2.682,0,0,1-.007.311.7.7,0,0,1-.677.62.7.7,0,0,1-.693-.6,2.5,2.5,0,0,1-.009-.346q0-3.5,0-6.991c0-.115.005-.231,0-.346a.828.828,0,0,0-.821-.777.833.833,0,0,0-.83.769c-.011.114-.005.231-.005.346q0,3.5,0,6.991a2.81,2.81,0,0,1-.008.346.694.694,0,0,1-.685.61.7.7,0,0,1-.678-.581,2.363,2.363,0,0,1-.013-.38q0-4.724,0-9.448a.905.905,0,0,0-.408-.859.824.824,0,0,0-1.252.727c-.017.784,0,1.569,0,2.353q0,3.236,0,6.472c0,.1.005.208,0,.311a.691.691,0,0,1-.686.646.692.692,0,0,1-.687-.645c-.015-.16-.006-.323-.006-.484q0-3.132,0-6.264a.847.847,0,0,0-.466-.823.773.773,0,0,0-.85.075.862.862,0,0,0-.348.753c0,.784,0,1.569,0,2.353q0,3.115,0,6.229v.319a9.213,9.213,0,0,1,1.171.008,2.133,2.133,0,0,1,1.862,2.051c.022,2.434.058,4.87-.014,7.3a7.474,7.474,0,0,1-2.419,5.345,2.2,2.2,0,0,0-.825,2.035,7.673,7.673,0,0,1,.006,1.21.7.7,0,0,1-.7.748.687.687,0,0,1-.683-.752c-.006-.865-.02-1.731.01-2.6a1.106,1.106,0,0,1,.268-.637c.4-.459.869-.861,1.273-1.319a6.6,6.6,0,0,0,1.7-4.419c.02-2.226.007-4.453,0-6.679a.85.85,0,0,0-.833-.946.851.851,0,0,0-.825.953c0,1.269,0,2.538,0,3.807,0,.553-.27.888-.7.879s-.681-.336-.682-.867q0-3.634,0-7.267a.832.832,0,0,0-.741-.922.819.819,0,0,0-.915.852c-.011.773,0,1.546,0,2.319,0,1.7,0,3.391,0,5.087,0,.591-.461.948-.948.739a.727.727,0,0,1-.437-.754c0-1.442,0-2.884,0-4.326,0-1.777,0-3.553,0-5.33a.832.832,0,0,0-1.123-.866.85.85,0,0,0-.536.881q0,2.544,0,5.087c0,1.534,0,3.068,0,4.6a.684.684,0,0,1-.948.7.729.729,0,0,1-.436-.754q.006-3.5,0-6.991c0-.15.005-.3,0-.45a.817.817,0,0,0-.824-.805.821.821,0,0,0-.83.8c-.008.115,0,.231,0,.346q0,4.032,0,8.064a.85.85,0,0,1-1.135.9.825.825,0,0,1-.542-.623c-.168-.682-.334-1.365-.508-2.045-.142-.558-.453-.82-.927-.8a.821.821,0,0,0-.807.9c.356,1.771.7,3.546,1.152,5.3a5.452,5.452,0,0,0,1.584,2.441c.5.5,1.013.979,1.486,1.5a1.147,1.147,0,0,1,.295.664c.034.852.015,1.707.013,2.56a.711.711,0,0,1-.416.7.571.571,0,0,1-.7-.1,1.068,1.068,0,0,1-.252-.605c-.031-.668-.024-1.338-.006-2.007a.757.757,0,0,0-.256-.6c-.625-.63-1.269-1.246-1.84-1.924A8.551,8.551,0,0,1-538.5-6.055c-.2-1.135-.447-2.26-.649-3.394a2.21,2.21,0,0,1,1.075-2.325,2.252,2.252,0,0,1,2.531.188c.078.06.155.122.28.221v-.491q0-2.2,0-4.4a2.228,2.228,0,0,1,2.975-2.352,9.761,9.761,0,0,0,.415-3.165c-.056-.722,0-1.453-.013-2.179a.85.85,0,0,0-.832-.916.836.836,0,0,0-.823.915c0,1.015,0,2.03,0,3.045a.719.719,0,0,1-.689.794.709.709,0,0,1-.693-.782c0-.092,0-.185,0-.277V-27.12c0-.092,0-.185,0-.277a.832.832,0,0,0-.857-.884.811.811,0,0,0-.8.895c0,2.411,0,4.822,0,7.233a1.582,1.582,0,0,1-.058.476.652.652,0,0,1-.7.444.674.674,0,0,1-.613-.6,3.557,3.557,0,0,1-.008-.38q0-4.62,0-9.24c0-.1,0-.208,0-.311a.843.843,0,0,0-.832-.844.821.821,0,0,0-.824.878c-.007.992,0,1.984,0,2.976q0,3.305,0,6.61a1.533,1.533,0,0,1-.071.508.644.644,0,0,1-.727.4.647.647,0,0,1-.571-.565,2.18,2.18,0,0,1-.012-.38q0-3.565,0-7.129c0-.616-.346-.987-.88-.963a.8.8,0,0,0-.77.709,3.288,3.288,0,0,0-.009.38q0,3.963,0,7.925a3.436,3.436,0,0,1-.006.346.837.837,0,0,1-.777.792.8.8,0,0,1-.882-.617c-.192-.7-.354-1.407-.532-2.11a.88.88,0,0,0-1.075-.762.883.883,0,0,0-.619,1.135q.385,1.949.77,3.9a6.807,6.807,0,0,0,1.967,3.617c.485.477.984.943,1.436,1.451a1.214,1.214,0,0,1,.307.727c.018,4.464.014,8.929.012,13.393a1.366,1.366,0,0,1-.033.309.677.677,0,0,1-.684.522.67.67,0,0,1-.645-.568,2.984,2.984,0,0,1-.02-.449q0-6.333,0-12.666a.791.791,0,0,0-.273-.666c-.26-.227-.484-.5-.741-.727a8.859,8.859,0,0,1-2.844-5.392c-.166-1.069-.41-2.126-.621-3.188a.758.758,0,0,0-.066-.151v-.761c.021-.052.046-.1.062-.157a2.244,2.244,0,0,1,3.694-1.163,1.351,1.351,0,0,0,.182.1c0-1.734-.007-3.428,0-5.121a2.141,2.141,0,0,1,1.721-2.134,7.222,7.222,0,0,1,1.314-.013c-.012.035,0,.014,0-.008,0-.069,0-.138.008-.207a2.165,2.165,0,0,1,1.237-1.935A5.718,5.718,0,0,1-539.21-32Z" fill="#fff"/>
-          <path id="Path_5874" data-name="Path 5874" d="M-213.75,260.584c0,1.044,0,2.087,0,3.131a.693.693,0,0,1-.309.659.606.606,0,0,1-.913-.434,1.259,1.259,0,0,1-.008-.184q0-3.177,0-6.353c0-.443.249-.709.635-.695.366.013.59.277.591.714C-213.748,258.476-213.75,259.53-213.75,260.584Z" transform="translate(-301.703 -261.025)" fill="#fff"/>
-          <path id="Path_5875" data-name="Path 5875" d="M-213.73,223.681a.614.614,0,0,1-.68.559.6.6,0,0,1-.538-.663.6.6,0,0,1,.658-.542A.609.609,0,0,1-213.73,223.681Z" transform="translate(-301.728 -231.343)" fill="#fff"/>
-        </g>
-      </svg>
-    </a>
   </div>
-
-  <div class="item_">
-    <a href="#" class="link_" data-tooltip title=" أحدث التشريعات">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35.81" height="33.221" viewBox="0 0 35.81 33.221">
-        <path id="Path_5876" data-name="Path 5876" d="M-143.366,171.4c.86,0,1.689.044,2.512-.01a2.485,2.485,0,0,1,2.865,2.564c.772,0,1.548-.009,2.323,0a4.1,4.1,0,0,1,.953.1,2.512,2.512,0,0,1,1.882,2.345c.017.407.013.816,0,1.224a.606.606,0,0,1-.643.657c-.1.006-.2,0-.3,0h-23.326c-.8,0-.957-.147-.946-.949a8.01,8.01,0,0,1,.071-1.365,2.451,2.451,0,0,1,2.278-1.994c.789-.041,1.582-.016,2.373-.02h.428a8.042,8.042,0,0,1,.144-.874,2.328,2.328,0,0,1,2.277-1.678c.952-.011,1.9-.006,2.855-.009a.581.581,0,0,0,.111-.03c.005-.116.017-.247.017-.377q0-9.086.006-18.172a.731.731,0,0,0-.29-.579c-.42-.408-.778-.88-1.172-1.317a.569.569,0,0,0-.331-.214c-2.484-.012-4.968-.009-7.491-.009a2.391,2.391,0,0,0,.086.278c1.511,3.448,3.036,6.889,4.516,10.349a2.372,2.372,0,0,1,.026,1.229,5.649,5.649,0,0,1-5.614,4.744,5.673,5.673,0,0,1-5.543-4.834,2.7,2.7,0,0,1,.2-1.575c1.571-3.515,3.1-7.048,4.641-10.578a3,3,0,0,0,.195-.67,2.662,2.662,0,0,1,2.555-2.225q2.818-.059,5.637,0a1.482,1.482,0,0,0,1.457-.712,3.931,3.931,0,0,1,6.616.368.564.564,0,0,0,.579.327c1.966-.01,3.931-.007,5.9-.005a2.708,2.708,0,0,1,2.942,2.473,1.914,1.914,0,0,0,.139.42c1.615,3.685,3.242,7.364,4.832,11.06a2.224,2.224,0,0,1,.033,1.122,5.661,5.661,0,0,1-5.577,4.833,5.682,5.682,0,0,1-5.59-4.784,2.833,2.833,0,0,1,.209-1.681c1.447-3.233,2.854-6.483,4.274-9.728.053-.121.1-.246.164-.406h-.339c-2.348,0-4.7,0-7.046-.005a.541.541,0,0,0-.491.28c-.364.474-.8.894-1.193,1.347a.748.748,0,0,0-.215.418q-.016,9.2-.008,18.394C-143.388,171.2-143.377,171.277-143.366,171.4Zm9.318,5.687a1.5,1.5,0,0,0-1.63-1.956c-1.172.054-2.348.03-3.522.029-5.365,0-10.73,0-16.1-.03a1.471,1.471,0,0,0-1.5,1.957Zm.882-25.5-4.138,9.456h8.278Zm-24.539,0-4.14,9.458h8.28Zm13.115,19.794V153.017h-1.678v18.362Zm-17.507-9.106a4.452,4.452,0,0,0,4.5,3.835,4.432,4.432,0,0,0,4.29-3.835Zm24.539,0a4.462,4.462,0,0,0,4.467,3.84,4.437,4.437,0,0,0,4.317-3.84Zm-5.109-13.175a2.755,2.755,0,0,0-2.705-2.841,2.753,2.753,0,0,0-2.826,2.757,2.725,2.725,0,0,0,2.653,2.8A2.7,2.7,0,0,0-142.667,149.095Zm-8.978,24.8h12.426a1.154,1.154,0,0,0-1.207-1.307q-5.007-.009-10.012,0A1.152,1.152,0,0,0-151.645,173.9Zm17.767-24.4a1.572,1.572,0,0,0-1.482-.909q-2.911,0-5.822,0a1.708,1.708,0,0,0-.247.037v.871Zm-23.091-.006h7.527V148.6c-.147-.006-.279-.017-.411-.017q-2.744,0-5.488,0a2.891,2.891,0,0,0-.517.031A1.486,1.486,0,0,0-156.969,149.489Z" transform="translate(163.332 -145.064)" fill="#fff"/>
-      </svg>
-    </a>
-  </div>
-
 </div>
 <main class="home_">
-    <section class="section_" id="legislation">
+    <section class="home_banner">
+
+        <div class="bg_image">
+            <img src="assets/images/banner-pattern.png" alt="LegalApp">
+        </div>
+
         <div class="container">
-
-            <div class="title_grid margin_bottom">
-                <div class="title_wrapper">
-                    <div class="section_title">
-                        <h2><span>التشريعات</span></h2>
-                    </div>
-                </div>
-
-                <div class="text_area t_animation d2">
-                    <p>لضمان تجربة مستخدم سهلة للموقع، يرجى اختيار مجال اهتمامك من مجموعات التشريعات التالية، بحيث سيقوم
-                        الموقع بعرض التشريعات ذات الصلة بالمجال المحدد، ويمكنك استعراض كافة التشريعات من خلال الضغط على رابط
-                        "عرض كافة التشريعات" بحيث سيقوم الموقع بعرض التشريعات المتوفرة مرتبة بحسب سنة إصدار التشريع </p>
-                </div>
+            <div class="banner_content">
+                <h2><span>تشريعات الإمارات</span></h2>
+                <p>هي المنصة الرسمية لتشريعات حكومة دولة الإمارات، والتي يتم تطويرها وإدارتها بواسطة مجلس الوزراء بالتنسيق مع كافة الجهات المعنية، وتهدف إلى توفير كافة التشريعات النافذة بالدولة لمختلف الفئات المعنية من مواطنين ومقيمين وقطاع الأعمال والمستثمرين من مختلف دول العالم، من خلال منظومة متكاملة ومحدثة ترتكز على تمكين هذه الفئات للاطلاع على أحدث التشريعات الجديدة وآخر التعديلات على القوانين السارية. تشمل المنصة على حزمة القوانين الاتحادية وتعديلاتها، واللوائح التنفيذية والقرارات التنفيذية لها، ويمكن استعراض هذه التشريعات من خلال اختيار إحدى القطاعات الرئيسية المبنية أدناه، أو باستخدام محرك البحث في المنصة</p>
             </div>
+        </div>
+    </section>
 
+    <section class="section_ no_padding_top content_block_section">
+        <div class="container">
             
-
-            <div class="legislation_wrapper">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-01.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-01.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-01.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-
-                                    <div class="content_">
-                                        <h4>مواطن/مقيم</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-02.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-02.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-02.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="content_">
-                                        <h4>مواطن/مقيم</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-03.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-03.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-03.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="content_">
-                                        <h4>زائر/سائح</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-01.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-01.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-01.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-
-                                    <div class="content_">
-                                        <h4>مواطن/مقيم</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-02.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-02.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-02.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="content_">
-                                        <h4>مواطن/مقيم</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="item_ t_animation">
-                                <a href="residents-laws.html" class="link_">
-                                    <div class="image_box">
-                                        <div class="img_">
-                                            <picture>
-                                                <source srcset="assets/images/leg-img-03.webp" type="image/webp">
-                                                <source srcset="assets/images/leg-img-03.jpg" type="image/jpeg">
-                                                <img src="assets/images/leg-img-03.webp" alt="UAE">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="content_">
-                                        <h4>زائر/سائح</h4>
-                                        <p>تتصمن التشريعات التالية أهم القوانين الخاصة بسكان دولة الإمارات العربية المتحدة، والتي تتعلق بأسرة المواطن/المقيم وتنظيمها، والقوانين الخاصة بالعمل والعمال، والتأمينات الاجتماعية مثل التأمين ضد التعطل عن العمل</p>
-                                        <div class="btn_group">
-                                            <div class="btn_ plane_">
-                                                <span>عرض</span>
-                                                <i class="icon-arrow-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="btn_group center_ m_t_md t_animation d7">
-                    <a href="laws.html" class="btn_"><span>عرض كافة التشريعات</span><i class="icon-arrow-left"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section_" id="management">
-        <div class="container">
-
-            <div class="title_wrapper">
-                <div class="section_title">
-                    <h2><span>  أحدث التشريعات</span></h2>
-                </div>
-            </div>
-
-            <div class="management_wrapper">
-                <div class="calendar_wrapper">
-                    <div id="calendar"></div>
-                </div>
-
-                <div class="calendar_swiper">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="item_">
-                                    <div class="title_">
-                                        <h4>30 ديسمبر 2021</h4>
-                                    </div>
-
-                                    <div class="text_area">
-                                        <p>قرار مجلس الوزراء رقم (18) لسنة 2023  بشأن اللائحة التنظيمية لتصاريح الأنشطة الفضائية والأنشطة الأخرى ذات الصلة بالقطاع الفضائي</p>
-                                    </div>
-
-                                    <div class="tags_">
-                                        <div class="tag_">معدل</div>
-                                    </div>
-
-                                    <div class="btn_group">
-                                        <a href="#" class="btn_">
-                                            <span>قراءة المزيد</span><i class="icon-arrow-left"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="item_">
-                                    <div class="title_">
-                                        <h4>30 ديسمبر 2021</h4>
-                                    </div>
-
-                                    <div class="text_area">
-                                        <p>قرار مجلس الوزراء رقم (18) لسنة 2023  بشأن اللائحة التنظيمية لتصاريح الأنشطة الفضائية والأنشطة الأخرى ذات الصلة بالقطاع الفضائي</p>
-                                    </div>
-
-                                    <div class="tags_">
-                                        <div class="tag_">معدل</div>
-                                    </div>
-
-                                    <div class="btn_group">
-                                        <a href="#" class="btn_">
-                                            <span>قراءة المزيد</span><i class="icon-arrow-left"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="item_">
-                                    <div class="title_">
-                                        <h4>30 ديسمبر 2021</h4>
-                                    </div>
-
-                                    <div class="text_area">
-                                        <p>قرار مجلس الوزراء رقم (18) لسنة 2023  بشأن اللائحة التنظيمية لتصاريح الأنشطة الفضائية والأنشطة الأخرى ذات الصلة بالقطاع الفضائي</p>
-                                    </div>
-
-                                    <div class="tags_">
-                                        <div class="tag_">معدل</div>
-                                    </div>
-
-                                    <div class="btn_group">
-                                        <a href="#" class="btn_">
-                                            <span>قراءة المزيد</span><i class="icon-arrow-left"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', ()=> {
-           const calendar = new Calendar({
-                id: "#calendar",
-                eventsData: [ 
-                    {
-                        start: '2023-08-18',
-                        end: '2023-08-18',
-                        name: 'Event 1'
-                    },
-                    {
-                        start: '2023-08-18',
-                        end: '2023-08-18',
-                        name: 'Event 2'
-                    },
-                    {
-                        start: '2023-08-18',
-                        end: '2023-08-18',
-                        name: 'Event 3'
-                    },
-                    {
-                        start: '2023-08-20',
-                        end: '2023-08-20',
-                        name: 'Event 2'
-                    },
-                    {
-                        start: '2023-08-26',
-                        end: '2023-08-26',
-                        name: 'Event 3'
-                    }
-                ],
-                selectedDateClicked: (event)=> {
-                    console.log(event)
-                }
-            });
-
-            var bannerSwiper = new Swiper(".management_wrapper .swiper-container", {
-                spaceBetween: 30,
-                pagination: {
-                    el: ".management_wrapper .swiper-pagination",
-                    clickable: true
-                },
-            });
-        })
-    </script>
-
-    <section class="section_" id="statistics">
-        <div class="container">
-
-            <div class="statistics_wrapper_new">
-                <div class="title_">
-                    <div class="title_wrapper have_margin">
-                        <div class="section_title">
-                            <h2><span>إحصائيات</span></h2>
-                        </div>
-                    </div>
-                    <div class="text_area t_animation d2">
-                        <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي</p>
-                    </div>
-                </div>
-
-                <div class="number_wrapper">
+            <div class="content_block_wrapper">
+                <div class="category_listing">
                     <div class="item_">
-                        <div class="shape_">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.711" height="312.901" viewBox="0 0 285.711 312.901">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                                    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#fff"/>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="Rectangle_2175" data-name="Rectangle 2175" width="159.545" height="270.268" rx="79.773" transform="matrix(0.819, 0.574, -0.574, 0.819, 155.019, 0)" opacity="0.07" fill="url(#linear-gradient)"/>
-                            </svg>
-                        </div>
-                        <div class="content_">
-                            <h4 data-counter="">313</h4>
-                            <p>قرارات مجلس الوزراء</p>
-                        </div>
-                    </div>
-
-                    <div class="item_">
-                        <div class="shape_">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.711" height="312.901" viewBox="0 0 285.711 312.901">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                                    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#fff"/>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="Rectangle_2175" data-name="Rectangle 2175" width="159.545" height="270.268" rx="79.773" transform="matrix(0.819, 0.574, -0.574, 0.819, 155.019, 0)" opacity="0.07" fill="url(#linear-gradient)"/>
-                            </svg>
-                        </div>
-                        <div class="content_">
-                            <h4 data-counter="">244</h4>
-                            <p>قوانين</p>
-                        </div>
-                    </div>
-
-                    <div class="item_">
-                        <div class="shape_">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.711" height="312.901" viewBox="0 0 285.711 312.901">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                                    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#fff"/>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="Rectangle_2175" data-name="Rectangle 2175" width="159.545" height="270.268" rx="79.773" transform="matrix(0.819, 0.574, -0.574, 0.819, 155.019, 0)" opacity="0.07" fill="url(#linear-gradient)"/>
-                            </svg>
-                        </div>
-                        <div class="content_">
-                            <h4 data-counter="">139</h4>
-                            <p>مراسيم بقوانين</p>
-                        </div>
-                    </div>
-
-                    <div class="item_">
-                        <div class="shape_">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.711" height="312.901" viewBox="0 0 285.711 312.901">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                                    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#fff"/>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="Rectangle_2175" data-name="Rectangle 2175" width="159.545" height="270.268" rx="79.773" transform="matrix(0.819, 0.574, -0.574, 0.819, 155.019, 0)" opacity="0.07" fill="url(#linear-gradient)"/>
-                            </svg>
-                        </div>
-                        <div class="content_">
-                            <h4 data-counter="">120</h4>
-                            <p>مراسيم إتحادية</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section_" id="most-watched">
-        <div class="container">
-            <div class="title_wrapper">
-                <div class="section_title">
-                    <h2><span>التشريعات الأكثر مشاهدة</span></h2>
-                </div>
-            </div>
-
-            <div class="most_watched_wrapper">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="m_item">
-                                <a href="#" class="link_">
-                                    <div class="content_">
-                                        <p>قرار مجلس الوزراء رقم (18) لسنة 2022 في شأن تصنيف منشآت القطاع الخاص الخاضعة لأحكام قانون تنظيم علاقات العمل</p>
-                                    </div>
-
-                                    <div class="no_">
-                                        <strong>12</strong>
-                                        <span>مشاهدة</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="m_item">
-                                <a href="#" class="link_">
-                                    <div class="content_">
-                                       <p>قرار مجلس الوزراء رقم (15) لسنة 2023 بشأن اللائحة التنفيذية للقانون الاتحادي رقم (8) لسنة 2021 في شأن الحصول على الموارد الوراثية ومشتقاتها والتقاسم العادل والمنصف للمنافع الناشئة عن استخدامه</p>
-                                    </div>
-
-                                    <div class="no_">
-                                        <strong>08</strong>
-                                        <span>مشاهدة</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="m_item">
-                                <a href="#" class="link_">
-                                    <div class="content_">
-                                        <p>اللائحة التنفيذية للقانون الاتحادي رقم (12) لسنة 2014 بشأن تنظيم مهنة مدققي الحسابات</p>
-                                    </div>
-
-                                    <div class="no_">
-                                        <strong>07</strong>
-                                        <span>مشاهدة</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section_" id="gazette">
-        <div class="container">
-            <div class="title_wrapper">
-                <div class="section_title">
-                    <h2><span> الجريدة الرسمية</span></h2>
-                </div>
-            </div>
-
-            <div class="gazette_wrapper">
-                <div class="item_">
-                    <a href="#" class="link_">
-
-                        <div class="image_box">
-
-                             <div class="img_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
                                 <picture>
-                                    <source srcset="assets/images/leg-img-02.webp" type="image/webp">
-                                    <source srcset="assets/images/leg-img-02.jpg" type="image/jpeg">
-                                    <img src="assets/images/leg-img-02.webp" alt="UAE">
+                                    <source srcset="assets/images/category-01.jpg">
+                                    <img src="assets/images/category-01.jpg" alt="Category">
                                 </picture>
                             </div>
-                            
-                            <div class="shape_">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="823" height="505" viewBox="0 0 823 505">
-                                    <g id="Subtraction_1" data-name="Subtraction 1" transform="translate(0 -46)" fill="#414a60">
-                                        <path d="M 822.4996337890625 550.4998168945312 L 0.5000168681144714 550.4998168945312 L 0.5000168681144714 46.49992752075195 L 822.4996337890625 46.50002670288086 L 822.4996337890625 550.4998168945312 Z M 472.1247253417969 59.22812652587891 C 422.2969055175781 59.23212814331055 375.51171875 83.56592559814453 346.9742126464844 124.320930480957 L 225.8414154052734 297.3161315917969 C 177.5732116699219 366.2516174316406 194.3866119384766 461.6040344238281 263.3214111328125 509.8726196289062 C 289.1197204589844 527.9368286132812 319.3392028808594 537.4853515625 350.7127075195312 537.4859008789062 L 350.7264099121094 537.4859008789062 C 400.5542297363281 537.4822998046875 447.3394165039062 513.1483154296875 475.8769226074219 472.3926391601562 L 597.0097045898438 299.3973388671875 C 620.39208984375 266.0041198730469 629.3707275390625 225.5040283203125 622.2916259765625 185.3577270507812 C 615.2125244140625 145.2110290527344 592.9232177734375 110.2241287231445 559.5297241210938 86.84182739257812 C 533.7304077148438 68.77682495117188 503.5104064941406 59.22812652587891 472.1368103027344 59.22812652587891 L 472.1247253417969 59.22812652587891 Z" stroke="none"/>
-                                        <path d="M 821.9995727539062 549.9998779296875 L 821.9995727539062 46.99998092651367 L 1.000039100646973 46.99987030029297 L 1.000039100646973 549.9998779296875 L 821.9995727539062 549.9998779296875 M 472.1246032714844 58.72809219360352 L 472.1368103027344 58.72809219360352 C 503.6135864257812 58.72809219360352 533.9326782226562 68.30809020996094 559.8164672851562 86.43231964111328 C 593.3194580078125 109.8910903930664 615.6818237304688 144.9927673339844 622.783935546875 185.2708740234375 C 629.8862915039062 225.5486450195312 620.8782348632812 266.1813049316406 597.4192504882812 299.68408203125 L 476.2864685058594 472.6793212890625 C 447.6556091308594 513.5686645507812 400.7172546386719 537.9822998046875 350.7263793945312 537.9859008789062 L 350.7127075195312 537.9859008789062 C 319.2360534667969 537.9852905273438 288.91748046875 528.405517578125 263.0346984863281 510.2821044921875 C 193.8740386962891 461.8555297851562 177.0054779052734 366.1906433105469 225.4319305419922 297.0293273925781 L 346.564697265625 124.0342025756836 C 375.1955871582031 83.14565277099609 422.1338195800781 58.73209381103516 472.1246032714844 58.72809219360352 M 822.9995727539062 551.0009765625 L 822.9995727539062 550.9998779296875 L 3.911675230483525e-05 550.9998779296875 L 3.911675230483525e-05 45.99987030029297 L 822.9995727539062 45.99998092651367 L 822.9995727539062 551.0009765625 Z M 472.1246948242188 59.72809219360352 C 422.4599304199219 59.73209381103516 375.8278198242188 83.98609161376953 347.3838195800781 124.6077575683594 L 226.2510375976562 297.6028747558594 C 178.1409301757812 366.3125305175781 194.8993682861328 461.3526611328125 263.6082763671875 509.4629821777344 C 289.3220520019531 527.4679565429688 319.4423828125 536.9852905273438 350.7127075195312 536.9859008789062 L 350.7263793945312 536.9859008789062 C 400.3911437988281 536.9822998046875 447.0233764648438 512.7280883789062 475.4673767089844 472.1057739257812 L 596.6001586914062 299.1105346679688 C 619.9058227539062 265.8267517089844 628.8551635742188 225.4594268798828 621.7991333007812 185.4445343017578 C 614.7433471679688 145.4294281005859 592.5271606445312 110.5570907592773 559.242919921875 87.25142669677734 C 533.5281372070312 69.24553680419922 503.4072570800781 59.72809219360352 472.1368103027344 59.72809219360352 L 472.1246948242188 59.72809219360352 Z" stroke="none" fill="#707070"/>
-                                    </g>
-                                </svg>
+
+                            <div class="content_">
+                                <p>التعليم والرعاية الصحية</p>
+                                <div class="no_"><strong>30</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-02.jpg">
+                                    <img src="assets/images/category-02.jpg" alt="Category">
+                                </picture>
                             </div>
 
-                            <div class="logo_holder">
-                                <div class="logo_">
-                                    <img src="assets/images/g-logo-1.png" alt="">
+                            <div class="content_">
+                                <p>الإقامة والعمل</p>
+                                <div class="no_"><strong>45</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-03.jpg">
+                                    <img src="assets/images/category-04.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>القضاء والأمن</p>
+                                <div class="no_"><strong>23</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-04.jpg">
+                                    <img src="assets/images/category-04.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>الاقتصاد والصناعة وممارسة الأعمال</p>
+                                <div class="no_"><strong>06</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-05.jpg">
+                                    <img src="assets/images/category-05.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>المال والضريبة</p>
+                                <div class="no_"><strong>56</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-06.jpg">
+                                    <img src="assets/images/category-06.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>الأحوال والمعاملات المدنية</p>
+                                <div class="no_"><strong>75</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-07.jpg">
+                                    <img src="assets/images/category-07.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>الاتصالات والتكنولوجيا</p>
+                                <div class="no_"><strong>23</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-08.jpg">
+                                    <img src="assets/images/category-08.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>الطاقة والنقل والبنية التحتية</p>
+                                <div class="no_"><strong>56</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-09.jpg">
+                                    <img src="assets/images/category-09.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>الرعاية الاجتماعية</p>
+                                <div class="no_"><strong>75</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-10.jpg">
+                                    <img src="assets/images/category-10.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>البيئة والموارد الطبيعية</p>
+                                <div class="no_"><strong>23</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item_">
+                        <a href="#" class="link_">
+                            <div class="image_block overlay_ gradient_overlay">
+                                <picture>
+                                    <source srcset="assets/images/category-11.jpg">
+                                    <img src="assets/images/category-11.jpg" alt="Category">
+                                </picture>
+                            </div>
+
+                            <div class="content_">
+                                <p>تشريعات أخرى</p>
+                                <div class="no_"><strong>56</strong> <span>تشريع</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="trending_listing">
+                    <div class="inner_">
+
+                        <div class="item_">
+                            <div class="trending_title">
+                                <p>أحدث التشريعات الجديدة</p>
+                            </div>
+
+                            <div class="number_listing_wrapper">
+                                <div class="n_item">
+                                    <a href="#">
+                                        <div class="no_" data-counter>928</div>
+                                        <p>قانون اتحادي</p>
+                                    </a>
+                                </div>
+
+                                <div class="n_item">
+                                    <a href="#">
+                                        <div class="no_" data-counter>750</div>
+                                        <p>لائحة تنفيذية</p>
+                                    </a>
+                                </div>
+
+                                <div class="n_item">
+                                    <a href="#">
+                                        <div class="no_" data-counter>1477</div>
+                                        <p>قرار تنظيمي</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="btn_group between_">
-                            <div class="title_">
-                                <p>الجريدة الرسمية</p>
-                                <h4>حكومة أبوظبي</h4>
+                        <div class="item_ bg_ flex_1">
+                            <div class="trending_title">
+                                <p>أحدث التشريعات الجديدة</p>
                             </div>
 
-                            <div class="btn_"><span>قراءة المزيد</span><i class="icon-arrow-left"></i></div>
+                            <div class="trending_listing_table">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>1</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>2</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>3</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>4</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>5</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item_ flex_1">
+                            <div class="trending_title">
+                                <p>آخر التعديلات التشريعية</p>
+                            </div>
+
+                            <div class="trending_listing_table">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>1</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>2</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>3</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>4</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>5</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item_ bg_ flex_1">
+                            <div class="trending_title">
+                                <p>التشريعات الأكثر اطلاعاً</p>
+                            </div>
+
+                            <div class="trending_listing_table">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <strong>1</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>2</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>3</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>4</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <strong>5</strong>
+                                            <p>قانون مزاولة غير الأطباء والصيادلة لبعض المهن الصحية</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_ no_padding_top">
+        <div class="container">
+
+            <div class="title_wrapper have_margin">
+                <div class="section_title">
+                    <h2><span>القنوات الإعلامية</span></h2>
+                </div>
+            </div>
+
+            <div class="mediacenter_wrapper">
+                <div class="video_block">
+                    <a href="assets/video/banner-2023.mp4" data-fancybox class="link_">
+                        <video  loop="" muted="" autoplay="" playsinline>				
+                            <source src="assets/video/banner-2023.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="play_icon">
+                            <div class="icon_">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+                                    <path id="Polygon_35" data-name="Polygon 35" d="M16,0,32,28H0Z" transform="translate(28) rotate(90)" fill="#fff"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_ no_padding_top">
+        <div class="container">
+
+            <div class="title_wrapper have_margin">
+                <div class="section_title">
+                    <h2><span>الجريدة الرسمية المحلية</span></h2>
+                </div>
+            </div>
+
+            <div class="gov_listing">
+                <div class="item_">
+                    <a href="#" class="link_">
+                        <div class="icon_">
+                            <img src="assets/images/gov-logo-01.png" alt="GOV">
+                        </div>
+
+                        <div class="text_">
+                            <p>حكومة أبوظبي</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="item_">
                     <a href="#" class="link_">
-
-                        <div class="image_box">
-
-                             <div class="img_">
-                                <picture>
-                                    <source srcset="assets/images/leg-img-03.webp" type="image/webp">
-                                    <source srcset="assets/images/leg-img-03.jpg" type="image/jpeg">
-                                    <img src="assets/images/leg-img-03.webp" alt="UAE">
-                                </picture>
-                            </div>
-
-                            <div class="shape_">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="823" height="505" viewBox="0 0 823 505">
-                                    <g id="Subtraction_1" data-name="Subtraction 1" transform="translate(0 -46)" fill="#414a60">
-                                        <path d="M 822.4996337890625 550.4998168945312 L 0.5000168681144714 550.4998168945312 L 0.5000168681144714 46.49992752075195 L 822.4996337890625 46.50002670288086 L 822.4996337890625 550.4998168945312 Z M 472.1247253417969 59.22812652587891 C 422.2969055175781 59.23212814331055 375.51171875 83.56592559814453 346.9742126464844 124.320930480957 L 225.8414154052734 297.3161315917969 C 177.5732116699219 366.2516174316406 194.3866119384766 461.6040344238281 263.3214111328125 509.8726196289062 C 289.1197204589844 527.9368286132812 319.3392028808594 537.4853515625 350.7127075195312 537.4859008789062 L 350.7264099121094 537.4859008789062 C 400.5542297363281 537.4822998046875 447.3394165039062 513.1483154296875 475.8769226074219 472.3926391601562 L 597.0097045898438 299.3973388671875 C 620.39208984375 266.0041198730469 629.3707275390625 225.5040283203125 622.2916259765625 185.3577270507812 C 615.2125244140625 145.2110290527344 592.9232177734375 110.2241287231445 559.5297241210938 86.84182739257812 C 533.7304077148438 68.77682495117188 503.5104064941406 59.22812652587891 472.1368103027344 59.22812652587891 L 472.1247253417969 59.22812652587891 Z" stroke="none"/>
-                                        <path d="M 821.9995727539062 549.9998779296875 L 821.9995727539062 46.99998092651367 L 1.000039100646973 46.99987030029297 L 1.000039100646973 549.9998779296875 L 821.9995727539062 549.9998779296875 M 472.1246032714844 58.72809219360352 L 472.1368103027344 58.72809219360352 C 503.6135864257812 58.72809219360352 533.9326782226562 68.30809020996094 559.8164672851562 86.43231964111328 C 593.3194580078125 109.8910903930664 615.6818237304688 144.9927673339844 622.783935546875 185.2708740234375 C 629.8862915039062 225.5486450195312 620.8782348632812 266.1813049316406 597.4192504882812 299.68408203125 L 476.2864685058594 472.6793212890625 C 447.6556091308594 513.5686645507812 400.7172546386719 537.9822998046875 350.7263793945312 537.9859008789062 L 350.7127075195312 537.9859008789062 C 319.2360534667969 537.9852905273438 288.91748046875 528.405517578125 263.0346984863281 510.2821044921875 C 193.8740386962891 461.8555297851562 177.0054779052734 366.1906433105469 225.4319305419922 297.0293273925781 L 346.564697265625 124.0342025756836 C 375.1955871582031 83.14565277099609 422.1338195800781 58.73209381103516 472.1246032714844 58.72809219360352 M 822.9995727539062 551.0009765625 L 822.9995727539062 550.9998779296875 L 3.911675230483525e-05 550.9998779296875 L 3.911675230483525e-05 45.99987030029297 L 822.9995727539062 45.99998092651367 L 822.9995727539062 551.0009765625 Z M 472.1246948242188 59.72809219360352 C 422.4599304199219 59.73209381103516 375.8278198242188 83.98609161376953 347.3838195800781 124.6077575683594 L 226.2510375976562 297.6028747558594 C 178.1409301757812 366.3125305175781 194.8993682861328 461.3526611328125 263.6082763671875 509.4629821777344 C 289.3220520019531 527.4679565429688 319.4423828125 536.9852905273438 350.7127075195312 536.9859008789062 L 350.7263793945312 536.9859008789062 C 400.3911437988281 536.9822998046875 447.0233764648438 512.7280883789062 475.4673767089844 472.1057739257812 L 596.6001586914062 299.1105346679688 C 619.9058227539062 265.8267517089844 628.8551635742188 225.4594268798828 621.7991333007812 185.4445343017578 C 614.7433471679688 145.4294281005859 592.5271606445312 110.5570907592773 559.242919921875 87.25142669677734 C 533.5281372070312 69.24553680419922 503.4072570800781 59.72809219360352 472.1368103027344 59.72809219360352 L 472.1246948242188 59.72809219360352 Z" stroke="none" fill="#707070"/>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <div class="logo_holder">
-                                <div class="logo_">
-                                    <img src="assets/images/g-logo-2.png" alt="">
-                                </div>
-                            </div>
-
+                        <div class="icon_">
+                            <img src="assets/images/gov-logo-02.png" alt="GOV">
                         </div>
 
-                        <div class="btn_group between_">
-                            <div class="title_">
-                                <p>الجريدة الرسمية</p>
-                                <h4>حكومة دبي </h4>
-                            </div>
-
-                            <div class="btn_"><span>قراءة المزيد</span><i class="icon-arrow-left"></i></div>
+                        <div class="text_">
+                            <p>حكومة أبوظبي</p>
                         </div>
                     </a>
                 </div>
 
+                <div class="item_">
+                    <a href="#" class="link_">
+                        <div class="icon_">
+                            <img src="assets/images/gov-logo-03.png" alt="GOV">
+                        </div>
+
+                        <div class="text_">
+                            <p>حكومة أبوظبي</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item_">
+                    <a href="#" class="link_">
+                        <div class="icon_">
+                            <img src="assets/images/gov-logo-04.png" alt="GOV">
+                        </div>
+
+                        <div class="text_">
+                            <p>حكومة أبوظبي</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item_">
+                    <a href="#" class="link_">
+                        <div class="icon_">
+                            <img src="assets/images/gov-logo-05.png" alt="GOV">
+                        </div>
+
+                        <div class="text_">
+                            <p>حكومة أبوظبي</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
+
+
+    <div class="scroll_indicator">
+        <div class="icon_">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.574" height="46.512" viewBox="0 0 33.574 46.512">
+            <defs>
+                <linearGradient id="linear-gradient" x1="0.011" y1="0.038" x2="0.978" y2="0.949" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ac4459"/>
+                <stop offset="1" stop-color="#344b61"/>
+                </linearGradient>
+            </defs>
+            <g id="Group_5132" data-name="Group 5132" transform="translate(-2342.72 -116.49)">
+                <path id="Path_6077" data-name="Path 6077" d="M2376.213,139.762c0,2.55.135,5.108-.026,7.648a16.568,16.568,0,0,1-11.745,14.839,16.766,16.766,0,0,1-21.476-13.436,19.152,19.152,0,0,1-.2-2.732c-.021-4.222-.09-8.445.009-12.664.168-7.191,3.489-12.477,10.053-15.468a16.67,16.67,0,0,1,23.029,11.717,21.982,21.982,0,0,1,.406,3.87c.065,2.074.017,4.151.017,6.226Zm-3.187-.011c0-1.442.027-2.885-.007-4.326a35.8,35.8,0,0,0-.221-4.468,13.5,13.5,0,0,0-26.791,2.47c-.005,4.185-.012,8.371.008,12.556a17.1,17.1,0,0,0,.206,2.57,13.5,13.5,0,0,0,26.8-2.42C2373.031,144.006,2373.025,141.879,2373.025,139.751Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+                <g class="arrow_anim">
+                    <path id="Path_6078" data-name="Path 6078" d="M2414.045,192.938c.219-.2.348-.314.468-.434,1.058-1.056,2.11-2.118,3.173-3.169a1.648,1.648,0,0,1,2.361-.1,1.607,1.607,0,0,1-.039,2.356q-3.189,3.227-6.4,6.428a1.59,1.59,0,0,1-2.354-.009q-3.192-3.187-6.367-6.391a1.613,1.613,0,0,1-.094-2.355,1.649,1.649,0,0,1,2.4.08c1.063,1.051,2.115,2.113,3.173,3.168.118.118.246.226.458.42v-.673q0-6.226,0-12.451a1.709,1.709,0,0,1,.626-1.49,1.6,1.6,0,0,1,2.591,1.138c.015.193.012.387.012.58q0,6.094,0,12.187Z" transform="translate(-52.916 -52.802)" fill="url(#linear-gradient)"/>
+                </g>
+            </g>
+            </svg>
+
+        </div>
+    </div>
+
 </main>
 
-<div id="introPopup" class="intro_popup">
-    <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close"><svg
-            xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
-            <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
-        </svg></button>
-    <div class="inner_grid">
-
-        <div class="image_box">
-            <div class="img_">
-                <picture>
-                    <source srcset="assets/images/banner-img-02.webp" type="image/webp">
-                    <source srcset="assets/images/banner-img-02.jpg" type="image/jpeg">
-                    <img src="assets/images/banner-img-02.webp" alt="UAE">
-                </picture>
-            </div>
-        </div>
-
-        <div class="content_area">
-            <div class="text_area sm_">
-                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
-                    المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من
-                    الملاحظات او الانتقادات للتصميم الاساسي.</p>
-
-                <h4>Related Law</h4>
-                <p>قانون اتحادي رقم (51) لسنة 2006 في شأن مكافحة جرائم الاتجار بالبشر</p>
-
-                <div class="btn_group">
-                    <a href="participate.html" class="btn_ outline_">
-                        <span>يشارك</span>
-                        <i class="icon-arrow-left"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 
 <footer>
   <div class="container">
@@ -937,6 +725,7 @@
         <span>آخر تحديث للموقع بتاريخ:</span>
         <strong>07/06/2023 08:16:59</strong>
       </div>
+
       <div class="rating_">
         <label>تقييم محتوى الموقع</label>
         <ul class="rating_star_list" data-star-rating>
@@ -1086,22 +875,37 @@
         <strong>125455</strong>
       </div>
 
-      <a href="#" class="f_logo_link">
-        <img src="assets/images/uae.png" alt="UAE">
-      </a>
+      <ul class="footer_social_links">
+        <li><a href="#"><i class="icon-twitter-icon"></i></a></li>
+        <li><a href="#"><i class="icon-insta"></i></a></li>
+      </ul>
+
+      <div class="btn_group">
+
+        <a href="#" class="f_logo_link">
+          <img src="assets/images/uae-logo-falcon.png" alt="UAE">
+        </a>
+
+        <a href="#" class="f_logo_link">
+          <img src="assets/images/uae.png" alt="UAE">
+        </a>
+        
+        
+      </div>
     </div>
+
     <div class="footer_bottom">
       <ul>
-        <li><a href="#">WCAG Standards 2.0 AAA</a></li>
-        <li><a href="terms.html">الشروط والأحكام</a></li>
-        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-        <li><a href="about.html">نبذة</a></li>
+        <li><a href="#">الشروط والأحكام</a></li>
+        <li><a href="terms.html">سياسة الخصوصية</a></li>
+        <li><a href="privacy.html">اتصل بنا</a></li>
+        <li><a href="about.html">WCAG Standards 2.0 AAA</a></li>
       </ul>
 
       <div class="content_">
-        <p>حقوق التأليف والنشر © 2023 وزارة شؤون مجلس الوزراء. جميع الحقوق محفوظة.</p>
-        
+        <p>2023 مجلس الوزراء، جميع الحقوق محفوظة </p>
       </div>
+      
     </div>
   </div>
 
@@ -1115,6 +919,7 @@
 <script>
 
   const footerHeight = document.querySelector('footer').offsetHeight;
+  const headerHeight = document.querySelector('header').offsetHeight;
 
   const ratingFunc = (target, callback)=> {
   
@@ -1155,6 +960,7 @@
   window.addEventListener('DOMContentLoaded', ()=> {
 
     document.body.style.setProperty('--footer-height', footerHeight + "px");
+    document.body.style.setProperty('--header-height', headerHeight + "px");
 
     ratingFunc('[data-star-rating]', function(value) {
       console.log(value)

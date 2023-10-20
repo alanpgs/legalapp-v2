@@ -7,24 +7,71 @@
         <nav class="navbar_">
           <ul>
             <li class="nav_item notHide"><button class="toggler_" data-toggler><span></span></button></li>
-            <li class="nav_item notHide"><a href="{{page_ar}}" class="lang_btn">EN</a></li>
             <li class="nav_item_icon"><a href="{{menuLink 'index'}}"><i class="icon-home"></i></a></li>
             <li class="nav_item_icon notHide"><a href="{{menuLink 'login'}}"><i class="icon-user"></i></a></li>
-            <li class="nav_item_icon"><a href="#"><i class="icon-phone"></i></a></li>
-            <li class="nav_item"><a href="#">دستور الدولة</a></li>
-            <li class="nav_item"><a href="#">التشريعات</a></li>
+            <li class="nav_item notHide"><a href="{{page_ar}}" class="lang_btn">EN</a></li>
+            <li class="nav_item"><a href="#">دستور الإمارات</a></li>
+            <li class="nav_item dropdown_">
+              <a href="#">التشريعات</a>
+              <div class="dropdown_menu">
+                <div class="inner_">
+                  <div class="dropdown_wrapper">
+                      <div class="container">
+                        <div class="dropdown_content">
+
+                          <div class="dropdown_title">
+                            <h3>التشريعات</h3>
+                          </div>
+
+                          <div class="dropdown_nav">
+                            <nav>
+                              <ul>
+                                <li><a href="#">التعليم والرعاية الصحية</a></li>
+                                <li><a href="#">القضاء والأمن</a></li>
+                                <li><a href="#">الرعاية الاجتماعية </a></li>
+                                <li><a href="#">الإقامة والعمل</a></li>
+                                <li><a href="#">الأحوال والمعاملات المدنية</a></li>
+                                <li><a href="#">البيئة والموارد الطبيعية</a></li>
+                                <li><a href="#">الاقتصاد والصناعة وممارسة الأعمال</a></li>
+                                <li><a href="#">الاتصالات والتكنولوجيا </a></li>
+                                <li><a href="#">الاتصالات والتكنولوجيا </a></li>
+                                <li><a href="#">تشريعات أخرى</a></li>
+                                <li><a href="#">المال والضريبة</a></li>
+                                <li><a href="#">الطاقة والنقل والبنية التحتية</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_item"><a href="#">المنظومة التشريعية</a></li>
+            <li class="nav_item"><a href="#">مجلس الوزراء</a></li>
+            <li class="nav_item">
+              <div class="nav_search">
+                <form action="{{menuLink 'search'}}">
+                  <input type="text" placeholder="ابحث عن التشريع هنا">
+                  <button type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div>
+            </li>
           </ul>
         </nav>
 
-        <div class="nav_search">
+        {{!-- <div class="nav_search">
           <form action="{{menuLink 'search'}}">
             <input type="text" placeholder="بحث">
             <button type="submit"><i class="icon-search"></i></button>
           </form>
-        </div>
+        </div> --}}
       </div>
 
       <div class="nav_logo">
+        <a href="{{menuLink 'index'}}" class="nav_link">
+          <img src="{{assets}}/images/uae.png" alt="UAE">
+        </a>
         <a href="{{menuLink 'index'}}" class="nav_link">
           <img src="{{assets}}/images/logo.svg" alt="UAE">
         </a>
@@ -33,34 +80,31 @@
 
     </div>
   </div>
-
-  <div class="nav_mega_menu">
-
-    <div class="bg_"><img src="{{assets}}/images/bg-menu.png" alt="UAE" loading="lazy"></div>
-
-    <div class="container">
-      <div class="menu_container">
-
-        <div class="nav_search">
-          <form action="#">
-            <input type="text" placeholder="بحث">
-            <button type="submit"><i class="icon-search"></i></button>
-          </form>
-        </div>
-
-        <nav class="mega_navbar">
-          <ul>
-            <li class="nav_item"><a href="{{menuLink 'index'}}"> الرئيسية</a></li>
-            <li class="nav_item"><a href="{{menuLink 'news'}}">الأخبار</a></li>
-            <li class="nav_item"><a href="{{menuLink 'about'}}">معلومات عنا</a></li>
-            <li class="nav_item"><a href="{{menuLink 'faq'}}">أسئلة متكررة</a></li>
-            <li class="nav_item"><a href="{{menuLink 'constitution'}}">الدستور</a></li>
-            <li class="nav_item"><a href="{{menuLink 'contact'}}">تواصل معنا</a></li>
-            <li class="nav_item"><a href="{{menuLink 'laws'}}">التشريعات</a></li>
-            <li class="nav_item"><a href="{{menuLink 'login'}}">تسجيل الدخول</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
 </header>
+
+<div class="sidemenu_container">
+  <div class="sidemenu_overlay"></div>
+  <div class="sidemenu_wrapper">
+
+    <div class="sidemenu_close_bar">
+      <button data-side-menu-close>
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="sidemenu_navbar">
+      <nav>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">معلومات عنا</a></li>
+          <li><a href="#">الدستور</a></li>
+          <li><a href="#">التشريعات</a></li>
+          <li><a href="#">الأخبار</a></li>
+          <li><a href="#">أسئلة متكررة</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div>

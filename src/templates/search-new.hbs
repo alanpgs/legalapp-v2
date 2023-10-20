@@ -1,0 +1,462 @@
+{{> loader}}
+{{> header}}
+
+<main class="page_">
+
+    <div class="breadcrumb_wrapper">
+        <div class="container">
+            <ul class="breadcrumb_">
+                <li><a href="{{menuLink 'index'}}">الصفحة الرئيسية</a></li>
+                <li><span>بحث</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="section_">
+        <div class="container">
+
+            <div class="title_wrapper have_margin between_">
+                <div class="section_title">
+                    <h2><span>نتائج البحث</span></h2>
+                </div>
+
+                <ul class="icon_link_list">
+                    <li><a href="{{menuLink 'index'}}"><i class="icon-back"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="search_grid">
+                <div class="search_filter t_animation d3">
+
+                    <div class="filter_close_btn">
+                        <button data-filter-close type="button" ><i class="icon-plus"></i></button>
+                    </div>
+
+                    <form action="#" class="filter_form">
+
+                        <div class="filter_title">تصنيف نتائج البحث</div>
+
+                        <div class="item_" data-filter-item>
+                            <div class="title_">
+
+                                 <div class="checkbox_v2">
+                                    <input type="checkbox" data-check-all value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">يكتب</label>
+                                </div>
+
+                                <button data-filter-expand type="button"></button>
+
+                            </div>
+
+                            <div class="check_group white_" data-checkboxes >
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1"  checked>
+                                    <span></span>
+                                    <label for="checkbox1">نوع التشريع (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1"  checked>
+                                    <span></span>
+                                    <label for="checkbox1">قرارات رئيس مجلس الوزراء (50)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1"  checked>
+                                    <span></span>
+                                    <label for="checkbox1">قرارات مجلس الوزراء (36)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1"  checked>
+                                    <span></span>
+                                    <label for="checkbox1">مراسيم بقوانين (40)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1"  checked>
+                                    <span></span>
+                                    <label for="checkbox1">الدستور (20)</label>
+                                </div>
+                            </div>
+
+                            {{!-- <div class="expand_">
+                                <button data-expand>أظهر المزيد</button>
+                            </div> --}}
+                        </div>
+
+                        <div class="item_" data-filter-item>
+
+                            <div class="title_">
+                                 <div class="checkbox_v2">
+                                    <input type="checkbox" data-check-all value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">قطاع</label>
+                                </div>
+
+                                <button data-filter-expand type="button"></button>
+                            </div>
+
+                            <div class="check_group white_" data-checkboxes>
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">التعليم والرعاية الصحية (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الإقامة والعمل (50)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الاقتصاد والصناعة وممارسة الأعمال (36)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">المال والضريبة (40)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">القضاء والأمن (20)</label>
+                                </div>
+
+                                 <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الأحوال والمعاملات المدنية (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الاتصالات والتكنولوجيا (50)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الطاقة والنقل والبنية التحتية (36)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">الرعاية الاجتماعية (40)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">البيئة والموارد الطبيعية (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">تشريعات أخرى (40)</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                         <div class="item_" data-filter-item>
+
+                            <div class="title_">
+                                 <div class="checkbox_v2">
+                                    <input type="checkbox" data-check-all value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">سنة</label>
+                                </div>
+
+                                <button data-filter-expand type="button"></button>
+                            </div>
+
+                            <div class="check_group three_grid white_" data-checkboxes>
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2023 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2022 (50)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2021 (36)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2020 (40)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2019 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2018 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2017 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2016 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2015 (20)</label>
+                                </div>
+ 
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2014 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2013 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2012 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2011 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2010 (20)</label>
+                                </div>
+
+                                <div class="checkbox_v2">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <span></span>
+                                    <label for="checkbox1">2009 (20)</label>
+                                </div>
+
+                                
+                            </div>
+
+                            {{!-- <div class="expand_">
+                                <button data-expand>أظهر المزيد</button>
+                            </div> --}}
+                        </div>
+                    </form>
+                </div>
+
+                <div class="search_wrapper t_animation d4">
+
+                    <form action="#" class="search_form">
+                        <div class="input_">
+
+                            <input type="text" placeholder="ابحث عن التشريع هنا">
+
+                            <div class="filter_mobile_btn">
+                                <button class="btn_icon rounded_ outline_" data-filter-button><i class="icon-filter"></i></button>
+                            </div>
+
+                            <div class="btn_group">
+                                <button type="submit" class="btn_">
+                                    <span>بحث</span>
+                                </button>
+
+                                <button class="btn_icon rounded_ outline_"><i class="icon-cw"></i></button>
+                            </div>
+
+                            
+                            
+                        </div>
+
+                        <div class="custom_checkbox_v2">
+                            <div class="checkbox_v2">
+                                <input type="checkbox" value="1" id="checkbox1">
+                                <span></span>
+                                <label for="checkbox1">كلمة</label>
+                            </div>
+
+                            <div class="checkbox_v2">
+                                <input type="checkbox" value="2" id="checkbox2">
+                                <span></span>
+                                <label for="checkbox2">جملة مطابقة</label>
+                            </div>
+                        </div>
+
+                        <div class="custom_checkbox_v2">
+                            <div class="checkbox_v2">
+                                <input type="checkbox" value="3" id="checkbox3">
+                                <span></span>
+                                <label for="checkbox3">استبعاد نتائج البحث في المواد</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="search_result_name">03 البحث عن</div>
+
+                    <div class="search_result_list">
+                        <div class="item_">
+                            <a href="#">
+                                <div class="t_">قانون اتحادي رقم (8) لسنة 2019 بشأن المنتجات الطبية ومهنة الصيدلة والمنشآت الصيدلانية</div>
+                                <div class="d_"> <span>لا يجوز تداول</span> أي منتج طبي في الدولة إلا بعد الحصول من الوزارة على الموافقة التسويقية أو الموافقة على التسويق الحصري طبقاً للقواعد والشروط والإجراءات التي يحددها قرار من الوزير، <span>وذلك دون الإخلال بالتشريعات المعمول</span> بها في شأن المستحضرات البيطرية</div>
+                            </a>
+                        </div>
+
+                        <div class="item_">
+                            <a href="#">
+                                <div class="t_">قانون اتحادي رقم (8) لسنة 2019 بشأن المنتجات الطبية ومهنة الصيدلة والمنشآت الصيدلانية</div>
+                                <div class="d_"> <span>لا يجوز تداول</span> أي منتج طبي في الدولة إلا بعد الحصول من الوزارة على الموافقة التسويقية أو الموافقة على التسويق الحصري طبقاً للقواعد والشروط والإجراءات التي يحددها قرار من الوزير، <span>وذلك دون الإخلال بالتشريعات المعمول</span> بها في شأن المستحضرات البيطرية</div>
+                            </a>
+                        </div>
+
+                        <div class="item_">
+                            <a href="#">
+                                <div class="t_">قانون اتحادي رقم (8) لسنة 2019 بشأن المنتجات الطبية ومهنة الصيدلة والمنشآت الصيدلانية</div>
+                                <div class="d_"> <span>لا يجوز تداول</span> أي منتج طبي في الدولة إلا بعد الحصول من الوزارة على الموافقة التسويقية أو الموافقة على التسويق الحصري طبقاً للقواعد والشروط والإجراءات التي يحددها قرار من الوزير، <span>وذلك دون الإخلال بالتشريعات المعمول</span> بها في شأن المستحضرات البيطرية</div>
+                            </a>
+                        </div>
+
+                        <div class="item_">
+                            <a href="#">
+                                <div class="t_">قانون اتحادي رقم (8) لسنة 2019 بشأن المنتجات الطبية ومهنة الصيدلة والمنشآت الصيدلانية</div>
+                                <div class="d_"> <span>لا يجوز تداول</span> أي منتج طبي في الدولة إلا بعد الحصول من الوزارة على الموافقة التسويقية أو الموافقة على التسويق الحصري طبقاً للقواعد والشروط والإجراءات التي يحددها قرار من الوزير، <span>وذلك دون الإخلال بالتشريعات المعمول</span> بها في شأن المستحضرات البيطرية</div>
+                            </a>
+                        </div>
+
+                      
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+{{> footer}} 
+{{> script-page}}
+
+<script src="{{assets}}/scripts/vendor/datepicker.js"></script>
+
+<script>
+
+    
+    const filterClose = ()=> {
+        const filterBtn_ = document.querySelector('[data-filter-button]')
+        const closeBtn_ = document.querySelector('[data-filter-close]');
+        
+        if(!filterBtn_ && !closeBtn_) return false;
+
+        if(window.innerWidth < 768){
+
+            filterBtn_?.addEventListener('click', ()=> {
+                document.body.classList.add('filter_open');
+            })
+
+            closeBtn_?.addEventListener('click', ()=> {
+                document.body.classList.remove('filter_open');
+            })
+        }
+    }
+
+
+    const filterExpand = ()=> {
+        const target_ = document.querySelectorAll('[data-filter-item]');
+
+        target_?.forEach((el)=> {
+
+            const items_ = el.querySelectorAll('.check_group .checkbox_v2');
+            const expandButton = el.querySelector('.expand_');
+            const titleExpandButton = el.querySelector('[data-filter-expand]');
+            const checkboxGroup = el.querySelector('.check_group ')
+
+            const checkAllBox = el.querySelector('[data-check-all]')
+            const checkboxChildren = el.querySelectorAll('[data-checkboxes] input[type=checkbox], [data-checkboxes] input[type=radio]')
+
+            // Expand Button Style 1
+            if(items_?.length <= 5) expandButton?.remove();
+
+            expandButton?.addEventListener('click', (e)=> {
+                e.preventDefault();
+                el.classList.toggle('is_expand');
+            })
+
+            // Expand Button Style 2
+            titleExpandButton?.addEventListener('click', ()=> {
+                titleExpandButton.classList.toggle('show_');
+                checkboxGroup.classList.toggle('show_');
+            })
+
+            // Check All
+            const setCheckboxValue = (value)=> {
+                checkboxChildren.forEach((e)=> {
+                    e.checked = value;
+                })
+            }
+
+            checkAllBox.addEventListener('change', (event)=> {
+                setCheckboxValue(event.currentTarget.checked)
+            })
+
+            // Is Checked All
+            const isCheckedAll = [...checkboxChildren].every(element => element.checked === true);
+
+            if(isCheckedAll){
+                checkAllBox.checked = true;
+            }
+        })
+
+        
+
+        target_[0].querySelector('[data-filter-expand]')?.click();
+    }
+
+    window.addEventListener('DOMContentLoaded',function() {
+
+        filterClose();
+
+        filterExpand();
+
+    });
+
+</script>

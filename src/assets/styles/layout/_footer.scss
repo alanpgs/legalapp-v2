@@ -273,3 +273,28 @@ footer {
 }
 
 
+.footer_social_links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 0.75rem;
+
+    li{
+        position: relative;
+        display: block;
+
+        a{
+            position: relative;
+            display: block;
+            font-size: 1.25rem;
+            color: var(--text-color);
+
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+}

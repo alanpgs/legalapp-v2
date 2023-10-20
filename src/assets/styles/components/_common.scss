@@ -185,7 +185,7 @@
 
 // Popup
 .fancybox-bg {
-  background: var(--secondary-color);
+  background: #1B1D21;
 }
 
 .fancybox-close-small {
@@ -468,6 +468,11 @@ html[dir="rtl"] {
   @media only screen and (max-width: 767px) {
     width: 90vw;
   }
+
+  h2{
+    margin-top: 0;
+  }
+
   &.md_box {
     max-width: 1050px;
     // border-radius: 1em;
@@ -716,9 +721,56 @@ html[dir="rtl"] {
   pointer-events: none;
 }
 
+.scroll_indicator{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+
+  .icon_{
+    position: relative;
+    display: block;
+    width: 1.85rem;
+    height: auto;
+
+    svg{
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+
+      .arrow_anim{
+        transform-origin: bottom;
+        transform-box: fill-box;
+        animation: arrowDownAnim 0.8s ease infinite alternate;
+      }
+    }
+
+  }
+}
+
+@keyframes arrowDownAnim {
+  to{transform: translateY(50%);}
+}
+
 html[dir=ltr]{
   .floating_links{
     left: auto;
     right: 0;
   }
+
+  .scroll_indicator{
+    left: auto;
+    right: 0;
+  }
+}
+
+.fancybox-close-small{
+  background-color: var(--primary-color);
+  background: linear-gradient(120deg,var(--primary-color),var(--secondary-color));
+  border-radius: 0 0 0.25rem 0;
+}
+
+.fancybox-content {
+  border-radius: 0.5rem;
 }

@@ -49,10 +49,19 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         }
     },
     togglerButton: function() {
-        var x = document.querySelector("[data-toggler]");
-        x && x.addEventListener("click", function() {
-            document.body.classList.toggle("menu_active"), x.classList.toggle("active_");
-        });
+        var x = document.querySelector("[data-toggler]"), sideMenuCloseBtn = document.querySelector("[data-side-menu-close]"), sideMenuOverlay = document.querySelector(".sidemenu_overlay");
+        if (x) {
+            var menuFn = function() {
+                document.body.classList.toggle("menu_active"), x.classList.toggle("active_");
+            };
+            x.addEventListener("click", function() {
+                menuFn();
+            }), sideMenuCloseBtn.addEventListener("click", function() {
+                menuFn();
+            }), sideMenuOverlay.addEventListener("click", function() {
+                menuFn();
+            });
+        }
     },
     inputControls: function() {
         var fields = document.querySelectorAll("input:-webkit-autofill,input:not([type]),input[type=text]:not(.browser-default),input[type=password]:not(.browser-default),input[type=email]:not(.browser-default),input[type=url]:not(.browser-default),input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea");
@@ -71,8 +80,28 @@ window.addEventListener("DOMContentLoaded", function() {
     webControls.smoothScroll(), webControls.inputControls(), console.log("%c Developed by PGS (http://pgsuae.com/)", "background: #45d98e; color: #fff;");
 }), jQuery, inView("section").on("enter", function(el) {
     el.classList.add("active-view");
-}), inView.offset(150), window.addEventListener("DOMContentLoaded", function() {
+}), inView.offset(150);
+
+var filterExpandFn = function() {
+    var btn_ = document.querySelector("[data-filter-expand-btn]");
+    if (!btn_) return !1;
+    btn_.addEventListener("click", function() {
+        document.body.classList.toggle("filter_expand");
+    }), window.innerWidth < 1200 && btn_.click();
+};
+
+window.addEventListener("DOMContentLoaded", function() {
     document.body.classList.add("is-loaded"), this.setTimeout(function() {
         document.querySelector("[data-loader").remove();
-    }, 1e3);
+    }, 1e3), filterExpandFn(), $("[data-counter]").each(function() {
+        $(this).prop("Counter", 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3e3,
+            easing: "swing",
+            step: function(now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 });

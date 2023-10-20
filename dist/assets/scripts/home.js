@@ -49,10 +49,19 @@ var viewportWidth = window.innerWidth, viewportHeight = window.innerHeight, webC
         }
     },
     togglerButton: function() {
-        var x = document.querySelector("[data-toggler]");
-        x && x.addEventListener("click", function() {
-            document.body.classList.toggle("menu_active"), x.classList.toggle("active_");
-        });
+        var x = document.querySelector("[data-toggler]"), sideMenuCloseBtn = document.querySelector("[data-side-menu-close]"), sideMenuOverlay = document.querySelector(".sidemenu_overlay");
+        if (x) {
+            var menuFn = function() {
+                document.body.classList.toggle("menu_active"), x.classList.toggle("active_");
+            };
+            x.addEventListener("click", function() {
+                menuFn();
+            }), sideMenuCloseBtn.addEventListener("click", function() {
+                menuFn();
+            }), sideMenuOverlay.addEventListener("click", function() {
+                menuFn();
+            });
+        }
     },
     inputControls: function() {
         var fields = document.querySelectorAll("input:-webkit-autofill,input:not([type]),input[type=text]:not(.browser-default),input[type=password]:not(.browser-default),input[type=email]:not(.browser-default),input[type=url]:not(.browser-default),input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea");
@@ -83,5 +92,15 @@ window.addEventListener("DOMContentLoaded", function() {
         el.classList.add("exit-view");
     }), inView.offset(250), $("[data-model-box]").fancybox({
         modal: !0
+    }), $("[data-counter]").each(function() {
+        $(this).prop("Counter", 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3e3,
+            easing: "swing",
+            step: function(now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
     });
 });
